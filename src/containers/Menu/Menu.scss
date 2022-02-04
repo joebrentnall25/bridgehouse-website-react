@@ -1,0 +1,91 @@
+@use "../../Assets/Styles/Utility/variables" as *;
+
+.menu-hero {
+    &__subheader {
+        margin-bottom: 1rem;
+    }
+    
+    &__buttons {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-row-gap: 0.5rem;
+        &-btn {
+            display: block;
+            width: 100%;
+        }
+    }
+}
+.menu__info-card{
+    background-color: $light;
+    border-radius: 1rem;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 7fr;
+    grid-column-gap: 0.5rem;
+    align-items: center;
+    grid-row-gap: 0.5rem;
+    padding-left: 10%;
+    padding-right: 10%;
+    .menu__info-img{
+        width: 25px;
+        height: 25px;
+        justify-self: flex-end;
+    }
+    .menu__info-desc {
+        text-align: center;
+    }
+}
+.menu {
+    padding: 1rem 0;
+}
+#menu {
+    padding-bottom: 1rem;
+    .menu-categories__container{
+        padding: 1rem 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 1rem;
+        .menu-categories__btn {
+            width: 100%;
+        }
+    }
+    .menu__block {
+        background-color: $light;
+        border-radius: 0.5rem;
+        display:grid;
+        grid-template-columns: 1fr;
+        grid-auto-rows: auto;
+        padding: 1rem;
+        grid-gap: 1.25rem;
+        margin: 1rem 0;
+        .menu__header-text{
+            justify-self: center;
+            margin-bottom: 1rem;
+            margin-top: 2rem;
+        }
+        .menu__card {
+            margin-bottom: 1.5rem;
+            .menu__card-name {
+                margin-bottom: 0.5rem;
+            }
+            
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .menu-hero {
+        &__buttons {
+            grid-template-columns: 1fr 1fr;
+            grid-column-gap: 0.5rem;
+        }
+    }
+
+    #menu {
+        .menu__block {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+}

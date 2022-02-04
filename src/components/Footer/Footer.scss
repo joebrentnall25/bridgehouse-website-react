@@ -1,0 +1,78 @@
+@use "../../Assets/Styles/Utility/variables" as *;
+
+.footer {
+    background-color: $dark;
+    padding: 2rem;
+    .footer__main-content {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        img {
+            width: 150px;
+        }
+        h4 {
+            color: $light;
+            margin-bottom: 1rem;
+        }
+        div {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 1rem;
+        }
+        a {
+            color: $text-light;
+            margin-bottom: 10px;
+        }
+        .footer__para {
+            margin-bottom: 10px;
+        }
+        .footer__link-to-maps {
+            color: $light;
+        }
+    }
+    .footer__copywrite {
+        margin: 2rem 10%;
+        text-align: center;
+        border-top: 2px solid $text-light;
+        padding: 2rem 0;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .footer {
+        .footer__main-content {
+            grid-template-columns: 1fr 1fr;
+            .footer__basic-info {
+                margin-top:2rem;
+                &-para{
+                    padding: 0 20%;
+                    margin-bottom: 0.5rem;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .footer {
+        padding-top: 4rem;
+        .footer__main-content {
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            align-items: flex-start;
+            .footer__basic-info {
+                margin-top: 0;
+                &-para{
+                    padding: 0 20%;
+                    margin-bottom: 0.5rem;
+                }
+            }
+            h4 {
+                margin-top: 0.5rem;
+            }
+        }
+    }
+}
