@@ -146,7 +146,7 @@ export const menu = {
             category: "Cold"
         }
     ],
-    main: [
+    restaurant: [
         {
             item: "Full English",
             description: "Sausage, bacon, black pudding, hash browns, fresh tomato, mushrooms, egg, beans, tinned tomatoes, toast, fried bread",
@@ -340,7 +340,7 @@ export const menu = {
             category: "children"
         },  
     ],
-    barGarden: [
+    bar_garden: [
         {
             item: "Prosecco",
             description: "",

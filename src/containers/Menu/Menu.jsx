@@ -7,25 +7,39 @@ import { menu } from "../../Assets/data/data";
 const Menu = () => {
     const { roomId } = useParams();
     const [ room, setRoom ] = useState(roomId);
-    console.log(menu); 
 
     useEffect(() => {
         setRoom(roomId);
     }, [roomId])
+
+    const generateButtons = () => {
+        let categories = [];
+        Object.keys(menu).forEach(category => {
+            categories.push(category);
+        })
+        const buttonHtml = categories.map((category, index) => (
+            <Link key={index} to={`/menus/${category}`}><button className="menu-hero__buttons-btn btn-primary" onClick={()=> { setRoom(category)}}>{category}</button></Link>
+        ))
+
+        return buttonHtml;
+    }
+
+    const [ buttonsHtml, setButtonsHtml] = useState(generateButtons())
 
     return (<>
     <header className="container menu-hero">
         <h2 className="menu-hero__title primary">Menus</h2>
         <h3 className="menu-hero__subheader">View our menus.</h3>
         <div className="menu-hero__buttons">
-            <Link to="/menus/restaurant"><button data-menu="restaurant" className="menu-hero__buttons-btn btn-primary" onClick={()=> { setRoom("restaurant")
+            {buttonsHtml}
+            {/* <Link to="/menus/restaurant"><button data-menu="restaurant" className="menu-hero__buttons-btn btn-primary" onClick={()=> { setRoom("restaurant")
             }}>Restaurant</button></Link>
             <Link to="/menus/bar-garden"><button data-menu="bar-garden" className="menu-hero__buttons-btn btn-primary" onClick={()=> { setRoom("bar-garden")
             }}>Champagne Breakfast</button></Link>
             <Link to="/menus/drinks"><button data-menu="drinks" className="menu-hero__buttons-btn btn-primary" onClick={()=> { setRoom("drinks")
             }}>Drinks</button></Link>
             <Link to="/menus/takeaway"><button data-menu="takeaway" className="menu-hero__buttons-btn btn-primary" onClick={()=> { setRoom("takeaway")
-            }}>Takeaway</button></Link>
+            }}>Takeaway</button></Link> */}
         </div>
     </header>
     <section className="dark menu">
@@ -38,7 +52,10 @@ const Menu = () => {
             </div>
         </div>
         <div id="menu" className="container">
-            <MenuSection data={menu}/>
+            { room === "restaurant" ? <MenuSection data={menu.restaurant}/> : null } 
+            { room === "bar_garden" ? <MenuSection data={menu.bar_garden} /> : null }
+            { room === "drinks" ? <MenuSection data={menu.drinks} /> : null } 
+            { room === "takeaway" ? <p>takeaway</p> : null } 
         </div>
     </section>
     </>)

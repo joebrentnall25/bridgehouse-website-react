@@ -3,7 +3,8 @@ import React from "react";
 import {
   BrowserRouter as Router,
   Routes,
-  Route
+  Route,
+  Navigate
 } from "react-router-dom";
 
 import Nav from "../../components/Nav/Nav";
@@ -18,6 +19,7 @@ const Routing = () => {
                 <Nav/>
                 <Routes>
                     <Route path="/"/>
+                    <Route path="/menus" element={<Navigate replace to="/menus/restaurant" />} />
                     <Route path="/menus/:roomId" element={<Menu/>}/>
                     <Route path="/about" element={<About/>}/>
                     <Route path="/contact"/>
