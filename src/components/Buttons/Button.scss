@@ -1,0 +1,17 @@
+@use "../../Assets/Styles/Utility/variables" as *;
+
+.button-menu {
+    width: 100%;
+    padding: 0.5rem 1rem;
+    background-color: $dark;
+    border: none;
+    border-radius: 5px;
+    color: $light;
+}
+
+.button-simple {
+    border: none;
+    background-color: transparent;
+    color: black;
+    text-decoration: underline;
+}

@@ -23,14 +23,24 @@ export const areasData =  {
 
 export const reviews = [
     {
-        name: "John Doe",
+        name: "John Doe 1",
         year: "2021",
-        review: "This is a test review to show what the review box would show"
+        text: "This is a test review to show what the review box would show"
     },
     {
-        name: "Fred Smith",
+        name: "Fred Smith 2",
         year: "2021",
-        review: "This is a test review to show what the review box would show. This review is slightly different."
+        text: "This is a test review to show what the review box would show. This review is slightly different."
+    },
+    {
+        name: "Donald Randolf 3",
+        year: "2021",
+        text: "This is a test review to show what the review box would show. This review is slightly different."
+    },
+    {
+        name: "Dennis Skinner 4",
+        year: "2021",
+        text: "This is a test review to show what the review box would show. This review is slightly different."
     }
 ]
 export const menu = {

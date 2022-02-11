@@ -1,0 +1,29 @@
+@use "../../Assets/Styles/Utility/variables" as *;
+
+.reviews {
+    &__header {
+        h2 {
+            margin-bottom: 1rem;
+        }
+        h3 {
+            margin-bottom: 0.5rem;
+        }
+        p {
+            margin-bottom: 0.5rem;
+        }
+        .reviews__buttons {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 2rem;
+        }
+    }
+    &__review {
+        background-color: $dark;
+        padding: 1rem 10%;
+        .reviews__name {
+            margin-bottom: 0.5rem;
+        }
+    }
+}

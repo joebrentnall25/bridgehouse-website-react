@@ -1,5 +1,8 @@
 import "./About.scss";
 
+// Components
+import Reviews from "../../components/Reviews/Reviews";
+
 const About = () => {
     return (
         <>
@@ -60,21 +63,7 @@ const About = () => {
                         <a href="mailto:test@email.com">test@email.com</a>
                     </div>
                 </section>
-                <section className="reviews">
-                    <div className="reviews__header container">
-                        <h2 className="reviews__heading primary">Our Reviews</h2>
-                        <h3>Hear what our customers say.</h3>
-                        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."</p>
-                        <div className="reviews__buttons">
-                            <button className="btn-small" id="reviews__buttons--previous">Previous</button>
-                            <button className="btn-small" id="reviews__buttons--next">Next</button>
-                        </div>
-                    </div>
-                    <div className="reviews__review">
-                        <h2 id="reviews__name" className="reviews__name tertiary">Ellie Clarke (2021)</h2>
-                        <p id="reviews__para" className="reviews__para italics">"This is my review LOL"</p>
-                    </div>
-                </section>
+                <Reviews/> 
                 <section className="about-gallary container">
                     <div className="about-gallary__img"></div>
                     <div className="about-gallary__img"></div>

@@ -1,25 +1,48 @@
+// Libraries
 import { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
+
+// Styles
 import "./Menu.scss";
-import MenuSection from "../../components/MenuSection/MenuSection";
+
+// Data
 import { menu } from "../../Assets/data/data";
+
+// Components
+import MenuSection from "../../components/MenuSection/MenuSection";
+import Bookings from "../../components/BookTable/Bookings";
+import Button from "../../components/Buttons/Button";
+
 
 const Menu = () => {
     const { roomId } = useParams();
     const [ room, setRoom ] = useState(roomId);
 
+    const changeRoomStyles = roomId => {
+        const categories = getCategories();
+        
+    }
+
     useEffect(() => {
         setRoom(roomId);
     }, [roomId])
 
-    const generateButtons = () => {
+    const getCategories = () => {
         let categories = [];
         Object.keys(menu).forEach(category => {
             categories.push(category);
         })
-        const buttonHtml = categories.map((category, index) => (
-            <Link key={index} to={`/menus/${category}`}><button className="menu-hero__buttons-btn btn-primary" onClick={()=> { setRoom(category)}}>{category}</button></Link>
-        ))
+        return categories;
+    }
+
+    const generateButtons = () => {
+        const categories = getCategories();
+        
+        const buttonHtml = categories.map((category, index) => {
+            let categoryUpper = category[0].toUpperCase() + category.slice(1);
+            categoryUpper = categoryUpper.replace("_", " ");
+            return <Button key={index} to={`/menus/${category}`} type="menu" className="menu-hero__buttons-btn btn-primary" onClick={()=> { setRoom(category)}} text={categoryUpper}/>
+        })
 
         return buttonHtml;
     }
@@ -32,14 +55,6 @@ const Menu = () => {
         <h3 className="menu-hero__subheader">View our menus.</h3>
         <div className="menu-hero__buttons">
             {buttonsHtml}
-            {/* <Link to="/menus/restaurant"><button data-menu="restaurant" className="menu-hero__buttons-btn btn-primary" onClick={()=> { setRoom("restaurant")
-            }}>Restaurant</button></Link>
-            <Link to="/menus/bar-garden"><button data-menu="bar-garden" className="menu-hero__buttons-btn btn-primary" onClick={()=> { setRoom("bar-garden")
-            }}>Champagne Breakfast</button></Link>
-            <Link to="/menus/drinks"><button data-menu="drinks" className="menu-hero__buttons-btn btn-primary" onClick={()=> { setRoom("drinks")
-            }}>Drinks</button></Link>
-            <Link to="/menus/takeaway"><button data-menu="takeaway" className="menu-hero__buttons-btn btn-primary" onClick={()=> { setRoom("takeaway")
-            }}>Takeaway</button></Link> */}
         </div>
     </header>
     <section className="dark menu">
@@ -58,6 +73,7 @@ const Menu = () => {
             { room === "takeaway" ? <p>takeaway</p> : null } 
         </div>
     </section>
+    <Bookings type="table"/>
     </>)
 }
 
