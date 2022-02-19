@@ -18,11 +18,6 @@ const Menu = () => {
     const { roomId } = useParams();
     const [ room, setRoom ] = useState(roomId);
 
-    const changeRoomStyles = roomId => {
-        const categories = getCategories();
-        
-    }
-
     useEffect(() => {
         setRoom(roomId);
     }, [roomId])
@@ -41,7 +36,7 @@ const Menu = () => {
         const buttonHtml = categories.map((category, index) => {
             let categoryUpper = category[0].toUpperCase() + category.slice(1);
             categoryUpper = categoryUpper.replace("_", " ");
-            return <Button key={index} to={`/menus/${category}`} type="menu" className="menu-hero__buttons-btn btn-primary" onClick={()=> { setRoom(category)}} text={categoryUpper}/>
+            return <Button key={index} to={`/menus/${category}`} type="menu" className="menu-hero__buttons-btn btn-primary" onClick={()=> { setRoom(category)}} text={menu[category].altName}/>
         })
 
         return buttonHtml;
@@ -67,9 +62,9 @@ const Menu = () => {
             </div>
         </div>
         <div id="menu" className="container">
-            { room === "restaurant" ? <MenuSection data={menu.restaurant}/> : null } 
-            { room === "bar_garden" ? <MenuSection data={menu.bar_garden} /> : null }
-            { room === "drinks" ? <MenuSection data={menu.drinks} /> : null } 
+            { room === "restaurant" ? <MenuSection data={menu.restaurant.items}/> : null } 
+            { room === "bar_garden" ? <MenuSection data={menu.bar_garden.items} /> : null }
+            { room === "drinks" ? <MenuSection data={menu.drinks.items} /> : null } 
             { room === "takeaway" ? <p>takeaway</p> : null } 
         </div>
     </section>

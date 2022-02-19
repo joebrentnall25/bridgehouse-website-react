@@ -1,0 +1,40 @@
+@use "../../Assets/Styles/Utility/variables" as *;
+
+.areas {
+    padding: $padding;
+    &__heading {
+        color: $primary; 
+    }
+    &__para {
+        width: 80vw;
+        margin-top: 1rem;
+    }
+    &__buttons {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 1rem;
+        li {
+            list-style-type: none;
+            .areas__buttons--active {
+                color: $primary;
+            }
+            button {
+                margin: 1rem 0;
+                background: transparent;
+                border: none;
+                color: $text-light;
+                text-decoration: underline;
+            }
+        }
+    }
+    &__link {
+        display: inline-block;
+        margin: 1rem 0;
+    }
+    &__img {
+        width: 100%;
+        border-radius: 10px;
+    }
+}

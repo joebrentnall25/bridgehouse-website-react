@@ -15,3 +15,21 @@
     color: black;
     text-decoration: underline;
 }
+
+.button-menu-sub {
+    display: block;
+    width: 100%;
+    padding: 0.5rem;
+    background-color: $light;
+    border: 2px solid $dark;
+    text-align: center;
+    border-radius: 5px;
+    color: $dark;
+    text-decoration: none;
+}
+
+.button-form {
+    background-color: $dark;
+    color: $light;
+    border: none;
+}

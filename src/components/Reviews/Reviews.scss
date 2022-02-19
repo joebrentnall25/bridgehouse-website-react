@@ -21,9 +21,19 @@
     }
     &__review {
         background-color: $dark;
-        padding: 1rem 10%;
+        padding: 2rem 10%;
         .reviews__name {
             margin-bottom: 0.5rem;
+        }
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .reviews {
+        &__review {
+            padding: 2rem;
+            margin: 0 10%;
+            border-radius: 5px;
         }
     }
 }

@@ -34,9 +34,14 @@ h2.tertiary {
 
 p {
     font-family: 'Raleway', sans-serif;
-    font-size: 16px;
+    font-size: 18px;
     color: $text-light;
 }
+
+a, button {
+    font-size: 18px;
+}
+
 
 .italics {
     font-style: italic;

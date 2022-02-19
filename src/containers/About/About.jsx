@@ -2,6 +2,8 @@ import "./About.scss";
 
 // Components
 import Reviews from "../../components/Reviews/Reviews";
+import GoogleMap from "../../components/GoogleMap/GoogleMap";
+import Areas from "../../components/Areas/Areas";
 
 const About = () => {
     return (
@@ -24,25 +26,14 @@ const About = () => {
                         <a className="about-events__contact-mail" href="mailto:test@email.com">test@email.com</a>
                     </div>
                 </section>
-                <section className="areas container">
-                    <h2 className="areas__heading">Our Areas</h2>
-                    <p className="areas__para">Select an area to see a description, image and button leading to menu.</p>
-                    <ul className="areas__buttons">
-                        <li><button data-area="Restaurant" className="areas__button areas__buttons--active">Restaurant</button></li>
-                        <li><button data-area="Bar" className="areas__button">Bar</button></li>
-                        <li><button data-area="Garden" className="areas__button">Garden</button></li>
-                        <li><button data-area="Takeaway" className="areas__button">Takeaway</button></li>
-                    </ul>
-                    <p className="areas__description" id="areas__description"></p>
-                    <a id="areas__link" href="/menu.html" className="areas__link btn-primary">View Menu</a>
-                </section>
+                <Areas/>
                 <section className="about-useful container dark">
                     <div className="about-useful-parking">
                         <h4 className="about-useful-parking__header">Parking</h4>
                         <p className="about-useful-parking__text">We have limited parking on the front of the restaurant.</p>
                         <p className="about-useful-parking__text">There is also paid parking at the train station nearby.</p>
                     </div>
-                    <div className="about-useful-info">
+                    <div className="about-useful-info ">
                         <h4 className="about-useful-info__header">Nearby Attractions</h4>
                         <p className="about-useful-info__text">Shining Cliff Woods (275m)</p>
                         <p className="about-useful-info__text">Cromford Canal (2.4km)</p>

@@ -1,0 +1,50 @@
+@use "../../Assets/Styles/Utility/variables" as *;
+
+.menu-section__buttons {
+    margin-bottom: 2rem;
+}
+
+.menu-section__category-header {
+    margin-top: 2rem;
+    color: $secondary;
+    margin-bottom: 1rem;
+}
+
+.menu-section__item-name {
+    margin-top: 1rem;
+    color: $light;
+}
+
+.menu-section__item-desc {
+    margin-top: 0.25rem;
+}
+
+.menu-section__items {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+@media screen and (min-width: 768px) {
+    .menu-section__items {
+        grid-template-columns: 1fr 1fr;
+    }
+    .menu-section__category:nth-child(2n) {
+        text-align: right;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .menu-section__items {
+        column-gap: 2rem;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .menu-section__category:nth-child(2n){
+        text-align: center;
+    }
+    .menu-section__category:nth-child(3n){
+        text-align: right;
+    }
+    .menu-section__category:nth-child(4n){
+        text-align: left;
+    }
+}
