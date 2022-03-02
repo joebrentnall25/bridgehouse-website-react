@@ -9,8 +9,6 @@ import Button from "../Buttons/Button";
 import Carousel from "../Carousel/Carousel";
 
 const Areas = () => {
-    const areasImages = "https://drive.google.com/uc?export=view&id=1LULm9nWFcoWshRjmrgg7IBWSsCEiv_lL"
-
     const [imageIndex, setImageIndex] = useState(0);
     const [currentArea, setCurrentArea] = useState({
         name: areasData.Restaurant.name,
@@ -19,9 +17,13 @@ const Areas = () => {
         imgLink: areasData.Restaurant.imgLink
     })
 
+    console.log(window.location.origin)
+
+    
+
     const selectArea = (areaSelected) => {
         Object.keys(areasData).forEach((area) => {
-            if (area === areaSelected){
+            if (area === areaSelected){ 
                 setCurrentArea({
                     name: areasData[areaSelected].name,
                     link: areasData[areaSelected].link,
@@ -46,6 +48,7 @@ const Areas = () => {
 
     return (
     <div className="areas">
+        <img src={window.location.origin+'/Assets/Images/bh_hero.png'} alt="" />
         <div className="areas__main">
             <ul className="areas__main-buttons">
                 { buttonsHtml }

@@ -15,7 +15,7 @@ const Nav = () => {
     }
 
     return (
-    <nav className="dark">
+    <nav className="dark" id="nav">
         <div className="nav">            
             <div className="nav__main">
                 <button onClick={() => toggleMenu()}><FontAwesomeIcon icon={faBars}/></button>
@@ -28,10 +28,10 @@ const Nav = () => {
                     })}>Home</NavLink></li>
                     <li><NavLink to="/menus" style={({isActive}) => ({
                         color: isActive ? '#FFF' : '#929597'
-                    })}>Menus</NavLink></li>
+                    })}>Our Menus</NavLink></li>
                     <li><NavLink to="/about" style={({isActive}) => ({
                         color: isActive ? '#FFF' : '#929597'
-                    })}>About</NavLink></li>
+                    })}>About Us</NavLink></li>
                     <li><NavLink to="/contact" style={({isActive}) => ({
                         color: isActive ? '#FFF' : '#929597'
                     })}>Contact</NavLink></li>

@@ -21,8 +21,9 @@
         }
         &-content {
             &-para {
-                width: 80vw;
+                width: 100%;
                 margin: 1rem 0;
+                display: inline-block;
             }
         } 
     } 
@@ -40,9 +41,6 @@
                 text-align: right;
                 width: 30vw;
                 justify-self: flex-end;
-                &-para {
-                    padding-right: 50vw;
-                }
             }
             &-img {
                 grid-row: 2;
@@ -56,21 +54,22 @@
 @media screen and (min-width: 1024px) {
     .areas {
         &__main {
-            flex-direction: row;
-            justify-content: space-between;
-            column-gap: 2rem;
+            grid-template-columns: 1fr 1fr 3fr;
             align-items: center;
-            flex-wrap: nowrap;
+            column-gap: 2rem;
             &-buttons {
-                width: 25vw;
+                width: 15vw;
                 margin-right: 2rem;
             }
             &-content {
-                text-align: right;
-                width: 30vw;
+                text-align: left;
+                width: 20vw;
                 &-para {
-                    padding-right: 50vw;
                 }
+            }
+            &-img {
+                grid-row: 1;
+                grid-column: 3/4;
             }
         }
     }

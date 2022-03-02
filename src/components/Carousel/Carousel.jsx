@@ -2,6 +2,8 @@ import { useState } from "react";
 
 import "./Carousel.scss";
 
+import {BsArrowRightCircleFill, BsArrowLeftCircleFill} from 'react-icons/bs';
+
 const Carousel = (props) => {
     const {currentArea} = props;
 
@@ -28,8 +30,8 @@ const Carousel = (props) => {
     return (     
     <div className="carousel">
         <img className="carousel__img" src={currentArea.imgLink[imageIndex]} alt=""/>
-        <button className="carousel__button--prev" onClick={() => previousImage()}>Previous</button>
-        <button className="carousel__button--next" onClick={() => nextImage()}>Next</button>
+        <button className="carousel__button carousel__button--prev" onClick={() => previousImage()}><BsArrowLeftCircleFill size={28}/></button>
+        <button className="carousel__button carousel__button--next" onClick={() => nextImage()}><BsArrowRightCircleFill size={28}/></button>
     </div>)
 }
 

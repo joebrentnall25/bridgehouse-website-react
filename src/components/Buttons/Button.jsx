@@ -19,7 +19,7 @@ const Button = (props) => {
     }
     
     else if (type === "menu") {
-        return <Link to={to}><button className="button-menu" onClick={onClick}>{text}</button></Link>
+        return <HashLink to={to+"#menu"}><button className="button-menu" onClick={onClick}>{text}</button></HashLink>
     } 
     
     else if (type==="menu-sub") {
