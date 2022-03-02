@@ -8,7 +8,6 @@ const Footer = () => {
         <div className="footer__main-content">
             <div className="footer__basic-info">
                 <img src={logo} alt=""/>
-                <p className="footer__basic-info-para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque repellat laudantium minus quis earum fugiat, iure obcaecati tempora beatae vitae sit corporis.</p>
                 <a className="footer__link-to-maps" href="https://goo.gl/maps/neh3ysAx2RQHVMJW6">Derby Rd, Ambergate, Belper DE56 2EJ</a>
                 <p>Monday-Saturday: <span className="highlight">8am-3pm</span></p>
                 <p>Sunday: <span className="highlight">9am-2pm</span></p>

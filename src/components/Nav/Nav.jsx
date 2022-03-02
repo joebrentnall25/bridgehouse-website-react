@@ -12,11 +12,10 @@ const Nav = () => {
 
     const toggleMenu = () => {
         setToggle(!toggle);
-        console.log(toggle);
     }
 
     return (
-    <nav className="dark container">
+    <nav className="dark">
         <div className="nav">            
             <div className="nav__main">
                 <button onClick={() => toggleMenu()}><FontAwesomeIcon icon={faBars}/></button>
@@ -24,10 +23,18 @@ const Nav = () => {
             </div>
             <div className="nav__links--large">
                 <ul className={toggle ? "nav__links show-nav" : "nav__links"}>
-                    <li><NavLink to="/" activeClassName="active">Home</NavLink></li>
-                    <li><NavLink to="/menus/restaurant">Menus</NavLink></li>
-                    <li><NavLink to="/about">About</NavLink></li>
-                    <li><NavLink to="/contact">Contact</NavLink></li>
+                    <li><NavLink to="/home" style={({isActive}) => ({
+                        color: isActive ? '#FFF' : '#929597'
+                    })}>Home</NavLink></li>
+                    <li><NavLink to="/menus" style={({isActive}) => ({
+                        color: isActive ? '#FFF' : '#929597'
+                    })}>Menus</NavLink></li>
+                    <li><NavLink to="/about" style={({isActive}) => ({
+                        color: isActive ? '#FFF' : '#929597'
+                    })}>About</NavLink></li>
+                    <li><NavLink to="/contact" style={({isActive}) => ({
+                        color: isActive ? '#FFF' : '#929597'
+                    })}>Contact</NavLink></li>
                 </ul>
             </div>
         </div>

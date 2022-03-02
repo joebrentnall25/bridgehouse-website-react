@@ -36,7 +36,7 @@ const Menu = () => {
         const buttonHtml = categories.map((category, index) => {
             let categoryUpper = category[0].toUpperCase() + category.slice(1);
             categoryUpper = categoryUpper.replace("_", " ");
-            return <Button key={index} to={`/menus/${category}`} type="menu" className="menu-hero__buttons-btn btn-primary" onClick={()=> { setRoom(category)}} text={menu[category].altName}/>
+            return <Button key={index} image={menu[category].image} to={`/menus/${category}#menu`} type="menu" className="menu-hero__buttons-btn btn-primary" onClick={()=> { setRoom(category)}} text={menu[category].altName}/>
         })
 
         return buttonHtml;
@@ -53,19 +53,19 @@ const Menu = () => {
         </div>
     </header>
     <section className="dark menu">
-        <div className="menu__info container">
-            <div className="menu__info-card">
-                <img className="menu__info-img" src="./assets/images/gluten-free.png" alt=""/>
-                <p className="menu__info-desc">Gluten Free alternatives on most items.</p>
-                <img className="menu__info-img" src="./assets/images/vegan.png" alt=""/>
-                <p className="menu__info-desc">Vegan Alternatives available</p>
-            </div>
-        </div>
         <div id="menu" className="container">
             { room === "restaurant" ? <MenuSection data={menu.restaurant.items}/> : null } 
             { room === "bar_garden" ? <MenuSection data={menu.bar_garden.items} /> : null }
             { room === "drinks" ? <MenuSection data={menu.drinks.items} /> : null } 
             { room === "takeaway" ? <p>takeaway</p> : null } 
+        </div>
+        <div className="menu__info container">
+            <div className="menu__info-card">
+                <img className="menu__info-img" src="../../Assets/Images/gluten-free.png" alt=""/>
+                <p className="menu__info-desc">Vegan & Gluten Free alternatives available on most items.</p>
+                <img className="menu__info-img" src="./assets/images/vegan.png" alt=""/>
+                <p className="menu__info-desc">If you have any other dietry requirements please let us know in advance!</p>
+            </div>
         </div>
     </section>
     <Bookings type="table"/>

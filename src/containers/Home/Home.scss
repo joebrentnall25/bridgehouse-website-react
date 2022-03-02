@@ -1,0 +1,78 @@
+@use "../../Assets/Styles/Utility/variables" as *;
+
+.home-hero {
+    position: relative;
+    &__img {
+        position: relative;
+        width: 100%;
+        height: 50vh;
+        object-fit: cover;
+    }
+    &__img::after {
+        background: rgba($color: #000000, $alpha: 0.2);
+        opacity: 0;
+    }
+    &__content {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 2;
+        &-title {
+            color: $primary;
+            margin-bottom: 1rem;
+        }
+
+        &-subtitle {
+            color: $dark;
+            margin-bottom: 1rem;
+        }
+    }
+}
+
+.overlay {
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: $light;
+    opacity: 0.5;
+}
+
+.home-news {
+    background-color: $dark;
+    padding: $padding;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    &__article {
+        background-color: $light;
+        border: none;
+        height: 100%;
+        &-title {
+            color: $dark;
+            padding: 2rem 2rem 1rem 2rem;
+        }
+        &-img {
+            width: 100%;
+        }
+        &-para {
+            padding: 1rem 2rem;
+        }
+        &-btn {
+            padding: 0 2rem 2rem 2rem;
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .home-news {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .home-news {
+        grid-template-columns: 1fr 1fr;
+    }
+}

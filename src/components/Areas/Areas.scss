@@ -4,37 +4,74 @@
     padding: $padding;
     &__heading {
         color: $primary; 
+        margin-bottom: 2rem;
     }
-    &__para {
-        width: 80vw;
-        margin-top: 1rem;
-    }
-    &__buttons {
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
-        align-items: center;
-        gap: 1rem;
-        li {
-            list-style-type: none;
-            .areas__buttons--active {
-                color: $primary;
+    &__main {
+        display: grid;
+        grid-template-areas: 1fr;
+        &-buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+            width: 100%;
+            margin-bottom: 1rem;
+            li {
+                list-style-type: none;
             }
-            button {
+        }
+        &-content {
+            &-para {
+                width: 80vw;
                 margin: 1rem 0;
-                background: transparent;
-                border: none;
-                color: $text-light;
-                text-decoration: underline;
+            }
+        } 
+    } 
+}
+
+@media screen and (min-width: 768px) {
+    .areas {
+        &__main {
+            grid-template-columns: 1fr 1fr;
+            &-buttons {
+                width: 20vw;
+                margin-bottom: 0;
+            }
+            &-content {
+                text-align: right;
+                width: 30vw;
+                justify-self: flex-end;
+                &-para {
+                    padding-right: 50vw;
+                }
+            }
+            &-img {
+                grid-row: 2;
+                grid-column: 1 / span 2;
             }
         }
     }
-    &__link {
-        display: inline-block;
-        margin: 1rem 0;
-    }
-    &__img {
-        width: 100%;
-        border-radius: 10px;
+}
+
+
+@media screen and (min-width: 1024px) {
+    .areas {
+        &__main {
+            flex-direction: row;
+            justify-content: space-between;
+            column-gap: 2rem;
+            align-items: center;
+            flex-wrap: nowrap;
+            &-buttons {
+                width: 25vw;
+                margin-right: 2rem;
+            }
+            &-content {
+                text-align: right;
+                width: 30vw;
+                &-para {
+                    padding-right: 50vw;
+                }
+            }
+        }
     }
 }

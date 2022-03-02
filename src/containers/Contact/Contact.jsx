@@ -37,6 +37,7 @@ const Contact = () => {
         <div className="contact">
             <div className="contact__info dark">
                 <div className="contact__info-text">
+                    <h4 className="contact__info-header">Contact Details</h4>
                     <p>Bridgehouse</p>
                     <p>Derby Road</p>
                     <p>Ambergate</p>
@@ -46,14 +47,10 @@ const Contact = () => {
                     <p><a className="contact__info-text-links" href="mailto:support@bridgehouseambergate.co.uk"><i className="fas fa-envelope"></i>Email</a></p>
                     <div className="contact__info-text-times">
                         <br/>
+                        <h4 className="contact__info-header">Opening Times</h4>
                         <ul>
-                            <li>M: <span className="highlight">8am-3pm</span></li>
-                            <li>T: <span className="highlight">8am-3pm</span></li>
-                            <li>W: <span className="highlight">8am-3pm</span></li>
-                            <li>T: <span className="highlight">8am-3pm</span></li>
-                            <li>F: <span className="highlight">8am-3pm</span></li>
-                            <li>S: <span className="highlight">8am-3pm</span></li>
-                            <li>S: <span className="highlight">9am-2pm</span></li>
+                            <li>Mon-Sat: <span className="highlight">8am-3pm</span></li>
+                            <li>Sun: <span className="highlight">9am-2pm</span></li>
                         </ul> 
                         <br/>
                         <p>Please note that we stop serving food an hour before close.</p> 

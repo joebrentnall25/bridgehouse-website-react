@@ -11,13 +11,18 @@
     &__info {
         display: flex;
         justify-content: space-between;
-        width: 100%;
         padding: $padding;
         margin-top: 2rem;
+        margin-right: 10%;
         align-items: center;
+        width: 100%;
+        .contact__info-header {
+            color: $secondary;
+            margin-bottom: 1rem;
+        }
         &-text{
             &-links{
-                color: $secondary;
+                color: $text-light;
             }
             &-times {
                 color: $text-light;
@@ -80,7 +85,10 @@
         column-gap: 1rem;
         align-items: stretch;
         &__info{
+            flex: 1;
             margin-top: 0;
+            width: 50vw;
+            column-gap: 2rem;
             &-links {
             }
             &-text {
@@ -88,6 +96,7 @@
             }
         }
         &__form {
+            flex: 2;
         }
     }
 }

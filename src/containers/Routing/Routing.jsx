@@ -13,6 +13,7 @@ import Footer from "../../components/Footer/Footer";
 import About from "../About/About";
 import Menu from "../Menu/Menu";
 import Contact from "../Contact/Contact";
+import Home from "../Home/Home";
 
 
 const Routing = () => {
@@ -22,8 +23,8 @@ const Routing = () => {
                 <Nav/>
                 <Routes>
                     <Route path="/" element={<Navigate replace to="/home"/>}/>
-                    <Route path="/home" element={<Contact/>}/>
-                    <Route path="/menus" element={<Navigate replace to="/menus/restaurant" />} />
+                    <Route path="/home" element={<Home/>}/>
+                    <Route path="/menus" element={<Navigate replace to="/menus/restaurant"/>} />
                     <Route path="/menus/:roomId" element={<Menu/>}/>
                     <Route path="/about" element={<About/>}/>
                     <Route path="/contact" element={<Contact/>}/>

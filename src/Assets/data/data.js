@@ -1,46 +1,44 @@
 export const areasData = {
     Restaurant: {
-        link: "https://www.bbc.co.uk",
+        name: "Restaurant",
+        link: "/menus/restaurant",
         description: "This is a description about the restaurant",
-        imgLink: "./assets/images/hero.jpg",
+        imgLink: ["https://drive.google.com/uc?export=view&id=1lPWjFzdmRkTGaMswXcTJqaM1vW-7gKUb"],
     },
     Bar: {
-        link: "#",
-        description: "This is a description about the bar",
-        imgLink: "./assets/images/hero.jpg",
+        name: "Bar",
+        link: "/menus/bar_garden",
+        description: "This is a description about the bar. This is a description about the bar",
+        imgLink: ["https://drive.google.com/uc?export=view&id=1ApoJIt_cUVM9hLJJQn9K6A_5W6m_u8uN"],
     },
     Garden: {
-        link: "#",
+        name: "Garden",
+        link: "/menus/bar_garden",
         description: "This is a description about the garden",
-        imgLink: "./assets/images/hero.jpg",
-    },
-    Takeaway: {
-        link: "#",
-        description: "This is a description about the takeaway",
-        imgLink: "./assets/images/hero.jpg",
-    },
+        imgLink: ["https://drive.google.com/uc?export=view&id=1N2PSbb1_muGBMWery1VB918f-BlW4f0S"]
+    }
 };
 
 export const reviews = [
     {
-        name: "John Doe 1",
-        year: "2021",
-        text: "This is a test review to show what the review box would show",
+        name: "Trevor",
+        year: "November 2021",
+        text: "Fabulous birthday breakfast spent with my family at Bridge House, superb breakfasts enjoyed by everyone including my two young boys aged 3 and 5. Staff were very friendly and extremely helpful, Thank you Bridge House for making this occasion so special! ",
     },
     {
-        name: "Fred Smith 2",
-        year: "2021",
-        text: "This is a test review to show what the review box would show. This review is slightly different.",
+        name: "Susan",
+        year: "September 2021",
+        text: "Wow what fab food, presentation lovely and generous portions. Good value for money. Friendly welcoming staff and a clean and good service. What more could you want! Thank you, Highly recommended!",
     },
     {
-        name: "Donald Randolf 3",
-        year: "2021",
-        text: "This is a test review to show what the review box would show. This review is slightly different.",
+        name: "Kylie",
+        year: "January 2022",
+        text: "First visit here with friends and absolutely blown away with the breakfast! Full English was absolutely huge (not for the faint hearted) and the eggs benedict was the best I have ever had. Great service, menu and prices for the quality and amount of food served."
     },
     {
-        name: "Dennis Skinner 4",
-        year: "2021",
-        text: "This is a test review to show what the review box would show. This review is slightly different.",
+        name: "Unknown",
+        year: "January 2022",
+        text: "Bridge House is just amazing! The owners have done a great job renovating the place and the menu is extensive. In addition they also provide a great Vegan Menu! Great food & great service… really impressed.",
     },
 ];
 export const menu = {
@@ -178,7 +176,7 @@ export const menu = {
             {
                 item: "Cobs & Sandwiches",
                 description:
-                    "Bacon / Sausage|Add 70p for extra item|Egg, tomatoes, cheese, black pudding, hash brown, mushrooms",
+                    "Bacon / Sausage Add extra items including; egg, tomatoes, cheese, black pudding, hash brown, mushrooms",
                 symbols: ["vAvailable"],
                 category: "breakfast",
             },
@@ -349,7 +347,7 @@ export const menu = {
             },
             {
                 item: "Toast & Jam",
-                description: "",
+                description: "The choice of either white or brown toast served with a choice of jams.",
                 symbols: [],
                 category: "children",
             },
@@ -396,17 +394,17 @@ export const menu = {
             },
             {
                 item: "Eggs Benedict",
-                description: "",
+                description: "Poached eggs and bacon on toasted muffins topped with hollandaise sauce",
                 category: "Option 1",
             },
             {
                 item: "Eggs Royale",
-                description: "",
+                description: "Poached eggs and smoked salmon on toasted muffins topped with hollandaise sauce",
                 category: "Option 1",
             },
             {
                 item: "Eggs Florentine",
-                description: "",
+                description: "Poached eggs with spinach on toasted muffins topped with hollandaise sauce",
                 category: "Option 1",
             },
             {
