@@ -39,8 +39,11 @@
         transform: translate(-50%, -50%);
         padding: 0.5rem 1rem;
         color: $light;
-        background-color: rgba($color: $dark, $alpha: 0.8);
-        border: none;
+        background-color: none;
+        border: 2px solid $light;
+        font-size: 26px;
+        white-space: nowrap;
+        font-weight: 600;
     }
 }
 
@@ -53,18 +56,19 @@
 
 .button-area {
     width:100%;
-    border: 2px solid $primary;
+    border: 2px solid $dark;
     background-color: $light;
     padding: 0.5rem 1rem;
     cursor: pointer;
 }
 
 .button-area--active {
-    background-color: $primary;
-    border: 2px solid $primary;
+    background-color: $dark;
+    border: 2px solid $dark;
     padding: 0.5rem 1rem;
     width: 100%;
     color: $light;
+    cursor: pointer;
 }
 
 .button-menu-sub {

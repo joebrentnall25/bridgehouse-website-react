@@ -6,6 +6,10 @@ import emailjs from '@emailjs/browser';
 import Bookings from "../../components/BookTable/Bookings";
 import Button from "../../components/Buttons/Button";
 
+// Icons
+import {SiTripadvisor} from "react-icons/si";
+import {BsFacebook} from "react-icons/bs";
+
 const Contact = () => {
     const form = useRef();
     const [isSuccessful, setIsSuccessful] = useState(false);
@@ -44,7 +48,7 @@ const Contact = () => {
                     <p>Belper</p>
                     <br/>
                     <p><a className="contact__info-text-links" href="tel:+441332482549"><i className="fas fa-phone"></i> 01332 482549</a></p>
-                    <p><a className="contact__info-text-links" href="mailto:support@bridgehouseambergate.co.uk"><i className="fas fa-envelope"></i>Email</a></p>
+                    <p><a className="contact__info-text-links" href="mailto:support@bridgehouseambergate.co.uk">Email</a></p>
                     <div className="contact__info-text-times">
                         <br/>
                         <h4 className="contact__info-header">Opening Times</h4>
@@ -57,8 +61,8 @@ const Contact = () => {
                       </div>
                 </div>
                 <div className="contact__info-links ">
-                    <a target="_blank" href="https://www.facebook.com/BridgeHouseAmbergate"><i className="icon-facebook fab fa-facebook fa-3x"></i></a>
-                    <a href="https://www.tripadvisor.co.uk/Restaurant_Review-g2093189-d23163521-Reviews-Bridge_House-Ambergate_Derbyshire_England.html" target="_blank"><img src="./assets/images/trip-advisor-icon.png" alt=""/></a>
+                    <a target="_blank" href="https://www.facebook.com/BridgeHouseAmbergate"><BsFacebook className="contact__info-links-fb" size={60}/></a>
+                    <a href="https://www.tripadvisor.co.uk/Restaurant_Review-g2093189-d23163521-Reviews-Bridge_House-Ambergate_Derbyshire_England.html" target="_blank"><SiTripadvisor className="contact__info-links-ta" size={60}/></a>
                 </div>
             </div>
             <form ref={form} action="" className="contact__form" onSubmit={sendEmail}>

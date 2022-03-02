@@ -30,15 +30,15 @@ const Home = () => {
 
     return (
         <>
-            <header className="">
+            <header className="dark">
                 <div className="home-hero">
-                    <div className="overlay"/>
-                    <img src={heroImage} alt="" className="home-hero__img" />
-                    <div className="home-hero__content">    
+                <div className="home-hero__content">    
                         <h3 className="home-hero__content-title">Welcome to Bridgehouse</h3>
                         <p className="home-hero__content-subtitle">Be sure to check out our menus and book a table before your next visit.</p>
-                        <Button to="/menus" type="secondary" text="View Menus"/>
+                        <Button to="/menus" type="primary" text="View Menus"/>
                     </div>
+                    <img src={heroImage} alt="" className="home-hero__img" />
+                    
                 </div>
             </header>
             <Areas/>
