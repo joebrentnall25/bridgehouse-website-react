@@ -2,7 +2,7 @@ import "./About.scss";
 
 // Components
 import Reviews from "../../components/Reviews/Reviews";
-import GoogleMap from "../../components/GoogleMap/GoogleMap";
+import Map from "../../components/Map/Map";
 import Areas from "../../components/Areas/Areas";
 
 const About = () => {
@@ -40,8 +40,7 @@ const About = () => {
                         <p className="about-useful-info__text ">Great British Car Journey (1.28km)</p>
                     </div>
                 </section>
-                <section className="about-map" id="map">
-                </section>
+                <Map/>
                 <section className="about-info container">
                     <div className="about-info__address">
                         <p>Derby road</p>
