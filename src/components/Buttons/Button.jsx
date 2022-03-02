@@ -4,7 +4,7 @@ import { HashLink } from "react-router-hash-link";
 import "./Button.scss";
 
 const Button = (props) => {
-    const { type, text, to, onClick, buttonType, active} = props;
+    const { type, text, to, onClick, buttonType, active, image} = props;
 
     if (type === "primary") {
         return <Link to={to}><button className="button-primary">{text}</button></Link>
@@ -19,7 +19,7 @@ const Button = (props) => {
     }
     
     else if (type === "menu") {
-        return <HashLink to={to+"#menu"}><button className="button-menu" onClick={onClick}>{text}</button></HashLink>
+        return <HashLink className="button-menu" to={to+"#menu"}><img className="button-menu__img" src={image} alt="" /><p className="button-menu__text">{text}</p></HashLink>
     } 
     
     else if (type==="menu-sub") {
@@ -40,6 +40,10 @@ const Button = (props) => {
         } 
         return <button className="button-area" onClick={onClick}>{text}</button>
     } 
+
+    else if (type === "footer") {
+        return <HashLink to={to+"#nav"}>{text}</HashLink>
+    }
     
     else {
         return <button className="button">{text}</button>

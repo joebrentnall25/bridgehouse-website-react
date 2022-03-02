@@ -44,6 +44,7 @@ export const reviews = [
 export const menu = {
     drinks: {
         altName: "Drinks",
+        image: "https://drive.google.com/uc?export=view&id=1Lbo5hs-kZwR6fa24urzky0_NmNPe1y6p",
         items: [
             {
                 item: "Latte",
@@ -159,6 +160,7 @@ export const menu = {
     },
     restaurant: {
         altName: "Restaurant",
+        image: "https://drive.google.com/uc?export=view&id=1Lbo5hs-kZwR6fa24urzky0_NmNPe1y6p",
         items: [
             {
                 item: "Full English",
@@ -360,7 +362,8 @@ export const menu = {
         ],
     },
     bar_garden: {
-        altName: "Bar",
+        altName: "Bar & Garden",
+        image: "https://drive.google.com/uc?export=view&id=1Lbo5hs-kZwR6fa24urzky0_NmNPe1y6p",
         items: [
             {
                 item: "Prosecco",

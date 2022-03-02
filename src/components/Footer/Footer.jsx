@@ -1,6 +1,11 @@
 import "./Footer.scss";
 import logo from "../../Assets/Images/logo_white.png";
 import { Link } from "react-router-dom";
+import Button from "../Buttons/Button";
+
+// Icons
+import {BsFacebook} from "react-icons/bs"
+import {FaTripadvisor} from "react-icons/fa"
 
 const Footer = () => {
     return ( 
@@ -14,24 +19,23 @@ const Footer = () => {
             </div>
             <div className="footer__menus">
                 <h4>Menus</h4>
-                <Link to="/menus/bar-garden">Bar & Garden</Link>
-                <Link to="/menus/restaurant">Restaurant</Link>
-                <Link to="/menus/takeaway">Takeaway</Link>
-                <Link to="/menus/drinks">Drinks</Link>
+                <Button type="footer" to="/menus/restaurant" text="Restaurant"/>
+                <Button type="footer" to="/menus/bar_garden" text="Bar & Garden"/>
+                <Button type="footer" to="/menus/drinks" text="Drinks"/>
             </div>
             <div className="footer__pages">
                 <h4>Pages</h4>
                 <Link to="/menu/restaurant"></Link>
-                <a href="/#">About</a>
-                <a href="/#">Contact</a>
+                <Button type="footer" to="/about" text="About Us"/>
+                <Button type="footer" to="/contact" text="Contact"/>
             </div>
             <div className="footer__useful-info">
                 <h4>Useful Information</h4>
                 <a href="tel:+441332482549">01332 482549</a>
-                <a href="mailto:test@email.com">test@email.com</a>
-                <a href="">Directions</a>
-                <a href="">Trip Advisor</a>
-                <a href="https://www.facebook.com/BridgeHouseAmbergate"><i className="fab fa-facebook fa-3x"></i></a>
+                <a href="mailto:support@bridgehouseambergate.co.uk">Email</a>
+                <a href="https://goo.gl/maps/yCK5BfKazBZrhiom7" target="_blank">Directions</a>
+                <a href="https://www.tripadvisor.co.uk/Restaurant_Review-g2093189-d23163521-Reviews-Bridge_House-Ambergate_Derbyshire_England.html" target="_blank"><FaTripadvisor size={42}/></a>
+                <a href="https://www.facebook.com/BridgeHouseAmbergate"><BsFacebook size={42}/></a>
             </div>
         </div>
         <div className="footer__copywrite">

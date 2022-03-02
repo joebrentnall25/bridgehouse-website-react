@@ -36,7 +36,7 @@ const Menu = () => {
         const buttonHtml = categories.map((category, index) => {
             let categoryUpper = category[0].toUpperCase() + category.slice(1);
             categoryUpper = categoryUpper.replace("_", " ");
-            return <Button key={index} image={menu[category].image} to={`/menus/${category}`} type="menu" className="menu-hero__buttons-btn btn-primary" onClick={()=> { setRoom(category)}} text={menu[category].altName}/>
+            return <Button key={index} image={menu[category].image} to={`/menus/${category}`} type="menu" className="menu-hero__buttons-btn btn-primary" text={menu[category].altName}/>
         })
 
         return buttonHtml;
