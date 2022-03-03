@@ -1,6 +1,7 @@
 import "./Contact.scss";
 import react, {useRef, useState} from "react";
 import emailjs from '@emailjs/browser';
+import { Helmet } from "react-helmet";
 
 // Components
 import Bookings from "../../components/BookTable/Bookings";
@@ -32,8 +33,11 @@ const Contact = () => {
           e.target.reset();
       };
 
-    return ( 
-        <main>
+    return ( <>
+        <Helmet>
+            <meta charSet="utf-8" />
+            <title>Contact Us | Bridgehouse Ambergate</title>
+        </Helmet>
         <header className="contact-hero">
             <h2 className="menu-hero__title primary">Contact</h2>
             <h3 className="menu-hero__subheader">Get in touch.</h3>
@@ -77,7 +81,7 @@ const Contact = () => {
             </form>
         </div>
         <Bookings type="table"/>
-    </main>);
+    </>);
 }
 
 export default Contact;

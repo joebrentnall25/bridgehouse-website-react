@@ -1,4 +1,5 @@
 import "./About.scss";
+import { Helmet } from "react-helmet";
 
 // Components
 import Reviews from "../../components/Reviews/Reviews";
@@ -8,6 +9,10 @@ import Areas from "../../components/Areas/Areas";
 const About = () => {
     return (
         <>
+            <Helmet>
+                <meta charSet="utf-8" />
+                <title>About Us | Bridgehouse Ambergate</title>
+            </Helmet>
             <header className="container about-hero">
                 <h2 className="about-hero__title primary">Bridgehouse</h2>
                 <h3 className="about-hero__subheader">About us.</h3>

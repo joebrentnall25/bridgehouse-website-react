@@ -1,6 +1,7 @@
 // Libraries
 import { useEffect, useState } from "react";
-import { Link, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
+import { Helmet } from "react-helmet";
 
 // Styles
 import "./Menu.scss";
@@ -45,6 +46,10 @@ const Menu = () => {
     const [ buttonsHtml, setButtonsHtml] = useState(generateButtons())
 
     return (<>
+    <Helmet>
+        <meta charSet="utf-8" />
+        <title>Our Menus | Bridgehouse Ambergate</title>
+    </Helmet>
     <header className="container menu-hero">
         <h2 className="menu-hero__title primary">Menus</h2>
         <h3 className="menu-hero__subheader">View our menus.</h3>

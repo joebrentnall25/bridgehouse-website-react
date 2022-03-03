@@ -1,4 +1,5 @@
 import "./Home.scss";
+import { Helmet } from "react-helmet";
 
 // Components
 import Bookings from "../../components/BookTable/Bookings";
@@ -9,6 +10,9 @@ import Areas from "../../components/Areas/Areas";
 import heroImage from "../../Assets/Images/bh_hero.png";
 
 const Home = () => {
+    const meta = {
+        title: 'Bridgehouse Ambergate | Book your visit today'
+    }
     const news = [
         {
             title: "View Our Story",
@@ -30,6 +34,10 @@ const Home = () => {
 
     return (
         <>
+            <Helmet>
+                <meta charSet="utf-8" />
+                <title>Bridgehouse Ambergate | Book your visit today!</title>
+            </Helmet>
             <header className="dark">
                 <div className="home-hero">
                 <div className="home-hero__content">    

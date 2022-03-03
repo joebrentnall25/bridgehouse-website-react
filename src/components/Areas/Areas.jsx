@@ -48,7 +48,6 @@ const Areas = () => {
 
     return (
     <div className="areas">
-        <img src={window.location.origin+'/Assets/Images/bh_hero.png'} alt="" />
         <div className="areas__main">
             <ul className="areas__main-buttons">
                 { buttonsHtml }
