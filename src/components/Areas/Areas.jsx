@@ -55,7 +55,7 @@ const Areas = () => {
                 <Button className="areas__main-content-link" type="tertiary" to={currentArea.link} text="View Menu"/>
             </div>
             <div className="areas__main-img">
-                <Carousel currentArea={currentArea}/>
+                <Carousel currentArea={currentArea} maxIndex={currentArea.imgLink.length}/>
             </div>
         </div>
     </div>)

@@ -1,8 +1,13 @@
-// Images
+// Images - Areas
 import bar1 from "../../Assets/Images/Areas/bar_01.jpg";
 import bar2 from "../../Assets/Images/Areas/bar_02.jpeg";
 import gard1 from "../../Assets/Images/Areas/gard_01.jpeg";
 import rest1 from "../../Assets/Images/Areas/rest_01.jpg";
+
+// Images - menu
+import drinksImg from "../Images/Menu/drinksImg.jpeg";
+import restaurantImg from "../Images/Menu/drinksImg.jpeg";
+import barGardenImg from "../Images/Menu/drinksImg.jpeg";
 
 export const areasData = {
     Restaurant: {
@@ -48,125 +53,9 @@ export const reviews = [
     },
 ];
 export const menu = {
-    drinks: {
-        altName: "DRINKS",
-        image: "https://drive.google.com/uc?export=view&id=1Lbo5hs-kZwR6fa24urzky0_NmNPe1y6p",
-        items: [
-            {
-                item: "Latte",
-                description: "",
-                category: "Coffee",
-            },
-            {
-                item: "Cappuccino",
-                description: "",
-                category: "Coffee",
-            },
-            {
-                item: "Espresso",
-                description: "",
-                category: "Coffee",
-            },
-            {
-                item: "Black Coffee",
-                description: "Americano",
-                category: "Coffee",
-            },
-            {
-                item: "Flat White",
-                description: "",
-                category: "Coffee",
-            },
-            {
-                item: "Macchiato",
-                description: "",
-                category: "Coffee",
-            },
-            {
-                item: "Coffee & Cream",
-                description: "",
-                category: "Coffee",
-            },
-            {
-                item: "Mocha",
-                description: "",
-                category: "Coffee",
-            },
-            {
-                item: "Plain Hot Chocolate",
-                description: "",
-                category: "Hot Chocolate",
-            },
-            {
-                item: "Loaded Hot Chocolate",
-                description: "",
-                category: "Hot Chocolate",
-            },
-            {
-                item: "English Breakfast",
-                description: "",
-                category: "Tea",
-            },
-            {
-                item: "Earl Grey",
-                description: "",
-                category: "Tea",
-            },
-            {
-                item: "Lady Grey",
-                description: "",
-                category: "Tea",
-            },
-            {
-                item: "Red Bush",
-                description: "",
-                category: "Tea",
-            },
-            {
-                item: "Green Tea",
-                description: "",
-                category: "Tea",
-            },
-            {
-                item: "Berry",
-                description: "",
-                category: "Tea",
-            },
-            {
-                item: "Chamomile",
-                description: "",
-                category: "Tea",
-            },
-            {
-                item: "Orange Juice",
-                description: "",
-                category: "Cold",
-            },
-            {
-                item: "Apple Juice",
-                description: "",
-                category: "Cold",
-            },
-            {
-                item: "Cranberry Juice",
-                description: "",
-                category: "Cold",
-            },
-            {
-                item: "Bottled Still Water",
-                description: "",
-                category: "Cold",
-            },
-            {
-                item: "Bottled Carbonated Water",
-                description: "",
-                category: "Cold",
-            },
-        ],
-    },
     restaurant: {
         altName: "RESTAURANT",
-        image: "https://drive.google.com/uc?export=view&id=1Lbo5hs-kZwR6fa24urzky0_NmNPe1y6p",
+        image: restaurantImg,
         items: [
             {
                 item: "Full English",
@@ -367,9 +256,125 @@ export const menu = {
             },
         ],
     },
+    drinks: {
+        altName: "DRINKS",
+        image: drinksImg,
+        items: [
+            {
+                item: "Latte",
+                description: "",
+                category: "Coffee",
+            },
+            {
+                item: "Cappuccino",
+                description: "",
+                category: "Coffee",
+            },
+            {
+                item: "Espresso",
+                description: "",
+                category: "Coffee",
+            },
+            {
+                item: "Black Coffee",
+                description: "Americano",
+                category: "Coffee",
+            },
+            {
+                item: "Flat White",
+                description: "",
+                category: "Coffee",
+            },
+            {
+                item: "Macchiato",
+                description: "",
+                category: "Coffee",
+            },
+            {
+                item: "Coffee & Cream",
+                description: "",
+                category: "Coffee",
+            },
+            {
+                item: "Mocha",
+                description: "",
+                category: "Coffee",
+            },
+            {
+                item: "Plain Hot Chocolate",
+                description: "",
+                category: "Hot Chocolate",
+            },
+            {
+                item: "Loaded Hot Chocolate",
+                description: "",
+                category: "Hot Chocolate",
+            },
+            {
+                item: "English Breakfast",
+                description: "",
+                category: "Tea",
+            },
+            {
+                item: "Earl Grey",
+                description: "",
+                category: "Tea",
+            },
+            {
+                item: "Lady Grey",
+                description: "",
+                category: "Tea",
+            },
+            {
+                item: "Red Bush",
+                description: "",
+                category: "Tea",
+            },
+            {
+                item: "Green Tea",
+                description: "",
+                category: "Tea",
+            },
+            {
+                item: "Berry",
+                description: "",
+                category: "Tea",
+            },
+            {
+                item: "Chamomile",
+                description: "",
+                category: "Tea",
+            },
+            {
+                item: "Orange Juice",
+                description: "",
+                category: "Cold",
+            },
+            {
+                item: "Apple Juice",
+                description: "",
+                category: "Cold",
+            },
+            {
+                item: "Cranberry Juice",
+                description: "",
+                category: "Cold",
+            },
+            {
+                item: "Bottled Still Water",
+                description: "",
+                category: "Cold",
+            },
+            {
+                item: "Bottled Carbonated Water",
+                description: "",
+                category: "Cold",
+            },
+        ],
+    },
     bar_garden: {
         altName: "BAR & GARDEN",
-        image: "https://drive.google.com/uc?export=view&id=1Lbo5hs-kZwR6fa24urzky0_NmNPe1y6p",
+        image: barGardenImg,
         items: [
             {
                 item: "Prosecco",

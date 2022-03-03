@@ -8,6 +8,17 @@
         object-fit: cover;
         margin-top: 1rem;
     }
+    &__counter {
+        position: absolute;
+        bottom: 8px;
+        right: 50%;
+        transform: translate(50%, 0);
+        color: $dark;
+        font-weight: 400;
+        background-color: $light;
+        padding: 5px 10px;
+        border-radius: 1rem;
+    }
     &__button {
         border: none;
         background-color: transparent;
