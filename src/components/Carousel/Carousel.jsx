@@ -1,13 +1,16 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 import "./Carousel.scss";
 
 import {BsArrowRightCircleFill, BsArrowLeftCircleFill} from 'react-icons/bs';
 
 const Carousel = (props) => {
-    const {currentArea, maxIndex} = props;
+    const {currentArea, maxIndex, defIndex} = props;
+    const [imageIndex, setImageIndex] = useState(defIndex);
 
-    const [imageIndex, setImageIndex] = useState(0);
+    useEffect(() => {
+        setImageIndex(0);
+    },[currentArea])
     
     const nextImage = () => {
         if (imageIndex === currentArea.imgLink.length-1){
