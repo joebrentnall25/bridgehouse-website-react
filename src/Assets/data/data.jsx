@@ -1,21 +1,27 @@
+// Images
+import bar1 from "../../Assets/Images/Areas/bar_01.jpg";
+import bar2 from "../../Assets/Images/Areas/bar_02.jpeg";
+import gard1 from "../../Assets/Images/Areas/gard_01.jpeg";
+import rest1 from "../../Assets/Images/Areas/rest_01.jpg";
+
 export const areasData = {
     Restaurant: {
         name: "Restaurant",
         link: "/menus/restaurant",
         description: "This is a description about the restaurant",
-        imgLink: ["https://drive.google.com/uc?export=view&id=1lPWjFzdmRkTGaMswXcTJqaM1vW-7gKUb"],
+        imgLink: [rest1],
     },
     Bar: {
         name: "Bar",
         link: "/menus/bar_garden",
         description: "This is a description about the bar. This is a description about the bar",
-        imgLink: ["https://drive.google.com/uc?export=view&id=1ApoJIt_cUVM9hLJJQn9K6A_5W6m_u8uN"],
+        imgLink: [bar1, bar2],
     },
     Garden: {
         name: "Garden",
         link: "/menus/bar_garden",
         description: "This is a description about the garden",
-        imgLink: ["https://drive.google.com/uc?export=view&id=1N2PSbb1_muGBMWery1VB918f-BlW4f0S"]
+        imgLink: [gard1]
     }
 };
 

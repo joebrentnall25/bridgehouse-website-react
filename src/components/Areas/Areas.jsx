@@ -1,7 +1,6 @@
 import "./Areas.scss";
 import { useState } from "react";
 
-// Data
 import { areasData } from "../../Assets/data/data";
 
 // Components
@@ -18,8 +17,6 @@ const Areas = () => {
     })
 
     console.log(window.location.origin)
-
-    
 
     const selectArea = (areaSelected) => {
         Object.keys(areasData).forEach((area) => {
