@@ -23,11 +23,11 @@ const Home = () => {
             linkTo: "/About"
         },
         {
-            title: "Some other title",
-            para: "This is some sample text depicting the meaning of the title.",
+            title: "Want to be notified?",
+            para: "Sign up to our mailing list to hear about any new news about Bridgehouse.",
             image: "./something.png",
             imageAlt: "Image alt",
-            buttonText: "Check it out",
+            buttonText: "Sign Up",
             linkTo: "/About"
         }
     ]

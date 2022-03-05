@@ -13,19 +13,19 @@ export const areasData = {
     Restaurant: {
         name: "Restaurant",
         link: "/menus/restaurant",
-        description: "This is a description about the restaurant",
+        description: "The restaurant is situated at the front of the building. It serves a breakfast and brunch menu.",
         imgLink: [rest1],
     },
     Bar: {
         name: "Bar",
         link: "/menus/bar_garden",
-        description: "This is a description about the bar. This is a description about the bar",
+        description: "The bar can be found around the back of the restaurant accessed via the steps to the left of the building. The bar serves alcholic drinks and other beverages. The bar serves a champagne breakfast menu.",
         imgLink: [bar1, bar2],
     },
     Garden: {
         name: "Garden",
         link: "/menus/bar_garden",
-        description: "This is a description about the garden",
+        description: "The garden is around the back of the building, accessed via the stairs to the left of the building. The garden is a lovely environment for food and drinks, especially in the summer.",
         imgLink: [gard1]
     }
 };
@@ -463,4 +463,20 @@ export const menu = {
             },
         ],
     },
+    takeaway: {
+        altName: "TAKEAWAY",
+        image: drinksImg,
+        items: [
+            {
+                item: "",
+                description: "Right now we only support takeaway orders over the phone. Eventually you will be able to order online.",
+                category: "Info"
+            },
+            {
+                item: "Phone number",
+                description: '01332 482549',
+                category: "Info"
+            }
+        ]
+    }
 };

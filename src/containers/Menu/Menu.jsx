@@ -62,7 +62,7 @@ const Menu = () => {
             { room === "restaurant" ? <MenuSection data={menu.restaurant.items}/> : null } 
             { room === "bar_garden" ? <MenuSection data={menu.bar_garden.items} /> : null }
             { room === "drinks" ? <MenuSection data={menu.drinks.items} /> : null } 
-            { room === "takeaway" ? <p>takeaway</p> : null } 
+            { room === "takeaway" ? <MenuSection data={menu.takeaway.items}/> : null } 
         </div>
         <div className="menu__info container">
             <div className="menu__info-card">
