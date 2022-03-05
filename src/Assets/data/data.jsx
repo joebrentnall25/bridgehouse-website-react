@@ -468,8 +468,14 @@ export const menu = {
         image: drinksImg,
         items: [
             {
-                item: "Info",
-                description: "Right now we only support takeaway orders over the phone. Eventually you will be able to order online."
+                item: "",
+                description: "Right now we only support takeaway orders over the phone. Eventually you will be able to order online.",
+                category: "Info"
+            },
+            {
+                item: "Phone number",
+                description: '01332 482549',
+                category: "Info"
             }
         ]
     }
