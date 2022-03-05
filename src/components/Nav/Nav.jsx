@@ -25,16 +25,16 @@ const Nav = () => {
                 <ul className={toggle ? "nav__links show-nav" : "nav__links"}>
                     <li><NavLink to="/home" style={({isActive}) => ({
                         color: isActive ? '#FFF' : '#929597'
-                    })}>Home</NavLink></li>
+                    })}><span className="hover">Home</span></NavLink></li>
                     <li><NavLink to="/menus" style={({isActive}) => ({
                         color: isActive ? '#FFF' : '#929597'
-                    })}>Our Menus</NavLink></li>
+                    })}><span className="hover">Our Menus</span></NavLink></li>
                     <li><NavLink to="/about" style={({isActive}) => ({
                         color: isActive ? '#FFF' : '#929597'
-                    })}>About Us</NavLink></li>
+                    })}><span className="hover">About Us</span></NavLink></li>
                     <li><NavLink to="/contact" style={({isActive}) => ({
                         color: isActive ? '#FFF' : '#929597'
-                    })}>Contact</NavLink></li>
+                    })}><span className="hover">Contact</span></NavLink></li>
                 </ul>
             </div>
         </div>

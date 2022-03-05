@@ -463,14 +463,4 @@ export const menu = {
             },
         ],
     },
-    takeaway: {
-        altName: "TAKEAWAY",
-        image: drinksImg,
-        items: [
-            {
-                item: "Info",
-                description: "Right now we only support takeaway orders over the phone. Eventually you will be able to order online."
-            }
-        ]
-    }
 };
