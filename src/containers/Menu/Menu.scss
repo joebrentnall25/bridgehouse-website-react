@@ -8,7 +8,8 @@
     &__buttons {
         display: grid;
         grid-template-columns: 1fr;
-        grid-row-gap: 0.5rem;
+        column-gap: 0.5rem;
+        row-gap: 0.3rem;
         &-btn {
             display: block;
             width: 100%;
@@ -80,14 +81,21 @@
 @media screen and (min-width: 768px) {
     .menu-hero {
         &__buttons {
-            grid-template-columns: 1fr 1fr 1fr;
-            grid-column-gap: 0.5rem;
+            grid-template-columns: 1fr 1fr;
         }
     }
 
     #menu {
         .menu__block {
             grid-template-columns: 1fr 1fr;
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .menu-hero {
+        &__buttons {
+            grid-template-columns: 1fr 1fr 1fr 1fr;
         }
     }
 }
