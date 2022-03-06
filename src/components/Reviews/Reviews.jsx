@@ -1,7 +1,7 @@
 import { reviews } from "../../Assets/data/data";
 import "./Reviews.scss";
 import Button from "../Buttons/Button";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 const Reviews = () => {
 

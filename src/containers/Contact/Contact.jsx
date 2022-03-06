@@ -1,5 +1,5 @@
 import "./Contact.scss";
-import react, {useRef, useState} from "react";
+import {useRef, useState} from "react";
 import emailjs from '@emailjs/browser';
 import { Helmet } from "react-helmet";
 
@@ -65,8 +65,8 @@ const Contact = () => {
                       </div>
                 </div>
                 <div className="contact__info-links ">
-                    <a target="_blank" href="https://www.facebook.com/BridgeHouseAmbergate"><BsFacebook className="contact__info-links-fb" size={60}/></a>
-                    <a href="https://www.tripadvisor.co.uk/Restaurant_Review-g2093189-d23163521-Reviews-Bridge_House-Ambergate_Derbyshire_England.html" target="_blank"><SiTripadvisor className="contact__info-links-ta" size={60}/></a>
+                    <a target="_blank" rel="noreferrer" href="https://www.facebook.com/BridgeHouseAmbergate"><BsFacebook className="contact__info-links-fb" size={60}/></a>
+                    <a href="https://www.tripadvisor.co.uk/Restaurant_Review-g2093189-d23163521-Reviews-Bridge_House-Ambergate_Derbyshire_England.html" target="_blank" rel="noreferrer"><SiTripadvisor className="contact__info-links-ta" size={60}/></a>
                 </div>
             </div>
             <form ref={form} action="" className="contact__form" onSubmit={sendEmail}>

@@ -8,7 +8,6 @@ import Button from "../Buttons/Button";
 import Carousel from "../Carousel/Carousel";
 
 const Areas = () => {
-    const [imageIndex, setImageIndex] = useState(0);
     const [currentArea, setCurrentArea] = useState({
         name: areasData.Restaurant.name,
         link: areasData.Restaurant.link,
@@ -27,7 +26,6 @@ const Areas = () => {
                     description: areasData[areaSelected].description,
                     imgLink: areasData[areaSelected].imgLink
                 });
-                setImageIndex(0);
             }
         })
     }

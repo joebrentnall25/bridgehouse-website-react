@@ -10,9 +10,6 @@ import Areas from "../../components/Areas/Areas";
 import heroImage from "../../Assets/Images/bh_hero.jpg";
 
 const Home = () => {
-    const meta = {
-        title: 'Bridgehouse Ambergate | Book your visit today'
-    }
     const news = [
         {
             title: "View Our Story",

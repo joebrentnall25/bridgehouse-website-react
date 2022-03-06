@@ -21,6 +21,7 @@ const Bookings = (props) => {
             break;
         case "event":
             currentType = typeData.event;
+            break;
         default:
             console.log("INVALID TYPE: bookings type invalid.");
     }

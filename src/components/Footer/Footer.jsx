@@ -13,7 +13,7 @@ const Footer = () => {
         <div className="footer__main-content">
             <div className="footer__basic-info">
                 <img src={logo} alt=""/>
-                <a className="footer__link-to-maps" href="https://goo.gl/maps/neh3ysAx2RQHVMJW6">Derby Rd, Ambergate, Belper DE56 2EJ</a>
+                <a className="footer__link-to-maps" target="_blank" rel="noreferrer" href="https://goo.gl/maps/neh3ysAx2RQHVMJW6">Derby Rd, Ambergate, Belper DE56 2EJ</a>
                 <p>Monday-Saturday: <span className="highlight">8am-3pm</span></p>
                 <p>Sunday: <span className="highlight">9am-2pm</span></p>
             </div>
@@ -33,8 +33,8 @@ const Footer = () => {
                 <h4>Useful Information</h4>
                 <a href="tel:+441332482549">01332 482549</a>
                 <a href="mailto:support@bridgehouseambergate.co.uk">Email</a>
-                <a href="https://goo.gl/maps/yCK5BfKazBZrhiom7" target="_blank">Directions</a>
-                <a href="https://www.tripadvisor.co.uk/Restaurant_Review-g2093189-d23163521-Reviews-Bridge_House-Ambergate_Derbyshire_England.html" target="_blank"><FaTripadvisor size={42}/></a>
+                <a href="https://goo.gl/maps/yCK5BfKazBZrhiom7" target="_blank" rel="noreferrer">Directions</a>
+                <a href="https://www.tripadvisor.co.uk/Restaurant_Review-g2093189-d23163521-Reviews-Bridge_House-Ambergate_Derbyshire_England.html" target="_blank" rel="noreferrer"><FaTripadvisor size={42}/></a>
                 <a href="https://www.facebook.com/BridgeHouseAmbergate"><BsFacebook size={42}/></a>
             </div>
         </div>

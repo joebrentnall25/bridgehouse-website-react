@@ -35,15 +35,11 @@ const Menu = () => {
         const categories = getCategories();
         
         const buttonHtml = categories.map((category, index) => {
-            let categoryUpper = category[0].toUpperCase() + category.slice(1);
-            categoryUpper = categoryUpper.replace("_", " ");
             return <Button key={index} image={menu[category].image} to={`/menus/${category}`} type="menu" className="menu-hero__buttons-btn btn-primary" text={menu[category].altName}/>
         })
 
         return buttonHtml;
     }
-
-    const [ buttonsHtml, setButtonsHtml] = useState(generateButtons())
 
     return (<>
     <Helmet>
@@ -54,7 +50,7 @@ const Menu = () => {
         <h2 className="menu-hero__title primary">Menus</h2>
         <h3 className="menu-hero__subheader">View our menus.</h3>
         <div className="menu-hero__buttons">
-            {buttonsHtml}
+            {generateButtons()}
         </div>
     </header>
     <section className="dark menu">

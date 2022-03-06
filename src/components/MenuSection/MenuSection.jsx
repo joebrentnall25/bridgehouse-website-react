@@ -40,6 +40,7 @@ const MenuSection = (props) => {
                             <p className="menu-section__item-desc">{item.description}</p>
                         </div>
                     }
+                    return null;
                 })
                 cardArr.push(<div key={i} className="menu-section__category">
                 {title}
