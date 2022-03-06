@@ -2,7 +2,7 @@
   "name": "bridgehouse-react",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://joebrentnall25.github.io/bridgehouse-website-react/home",
+  "homepage": "https://joebrentnall25.github.io/bridgehouse-website-react/",
   "dependencies": {
     "@emailjs/browser": "^3.4.0",
     "@fortawesome/fontawesome-svg-core": "^1.3.0",
