@@ -5,6 +5,7 @@ import { Helmet } from "react-helmet";
 import Reviews from "../../components/Reviews/Reviews";
 import Map from "../../components/Map/Map";
 import Areas from "../../components/Areas/Areas";
+import Bookings from "../../components/BookTable/Bookings"
 
 const About = () => {
     return (
@@ -59,14 +60,7 @@ const About = () => {
                     </div>
                 </section>
                 <Reviews/> 
-                <section className="about-gallary container">
-                    <div className="about-gallary__img"></div>
-                    <div className="about-gallary__img"></div>
-                    <div className="about-gallary__img"></div>
-                    <div className="about-gallary__img"></div>
-                    <div className="about-gallary__img"></div>
-                    <div className="about-gallary__img"></div>
-                </section>
+                <Bookings type="table"/>
             </div>
         </>
     )

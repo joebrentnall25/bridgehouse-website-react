@@ -10,6 +10,11 @@ import drinksImg from "../Images/Menu/drinksImg.jpeg";
 import restaurantImg from "../Images/Menu/drinksImg.jpeg";
 import barGardenImg from "../Images/Menu/drinksImg.jpeg";
 
+// Gallary Images
+import gal1 from "../Images/Gallary/gal_01.jpeg";
+
+export const galleryImages = [gal1, gal1, gal1, gal1, gal1, gal1, gal1, gal1]; 
+
 export const areasData = {
     Restaurant: {
         name: "Restaurant",
