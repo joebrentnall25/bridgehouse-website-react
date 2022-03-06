@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/bridgehouse-website-react/static/css/main.afdde617.css",
-    "main.js": "/bridgehouse-website-react/static/js/main.71159241.js",
-    "static/js/787.391cba01.chunk.js": "/bridgehouse-website-react/static/js/787.391cba01.chunk.js",
-    "static/media/rest_01.jpg": "/bridgehouse-website-react/static/media/rest_01.8433005f2899bcd0b468.jpg",
-    "static/media/bar_01.jpg": "/bridgehouse-website-react/static/media/bar_01.ca81078029e30a2d5ebe.jpg",
-    "static/media/gard_01.jpeg": "/bridgehouse-website-react/static/media/gard_01.ff97c16e7e774d07c8e3.jpeg",
-    "static/media/bar_02.jpeg": "/bridgehouse-website-react/static/media/bar_02.89102a74f6583ab02066.jpeg",
-    "static/media/drinksImg.jpeg": "/bridgehouse-website-react/static/media/drinksImg.1f63953edfabd0e9efc5.jpeg",
-    "static/media/bh_hero.png": "/bridgehouse-website-react/static/media/bh_hero.6f6dff6f540824ed32fe.png",
-    "static/media/logo_white.png": "/bridgehouse-website-react/static/media/logo_white.fd5bfecc8abb589aba31.png",
-    "index.html": "/bridgehouse-website-react/index.html",
-    "main.afdde617.css.map": "/bridgehouse-website-react/static/css/main.afdde617.css.map",
-    "main.71159241.js.map": "/bridgehouse-website-react/static/js/main.71159241.js.map",
-    "787.391cba01.chunk.js.map": "/bridgehouse-website-react/static/js/787.391cba01.chunk.js.map"
+    "main.css": "/bridgehouse-website-react/home/static/css/main.afdde617.css",
+    "main.js": "/bridgehouse-website-react/home/static/js/main.04ff8148.js",
+    "static/js/787.391cba01.chunk.js": "/bridgehouse-website-react/home/static/js/787.391cba01.chunk.js",
+    "static/media/rest_01.jpg": "/bridgehouse-website-react/home/static/media/rest_01.8433005f2899bcd0b468.jpg",
+    "static/media/bar_01.jpg": "/bridgehouse-website-react/home/static/media/bar_01.ca81078029e30a2d5ebe.jpg",
+    "static/media/gard_01.jpeg": "/bridgehouse-website-react/home/static/media/gard_01.ff97c16e7e774d07c8e3.jpeg",
+    "static/media/bar_02.jpeg": "/bridgehouse-website-react/home/static/media/bar_02.89102a74f6583ab02066.jpeg",
+    "static/media/drinksImg.jpeg": "/bridgehouse-website-react/home/static/media/drinksImg.1f63953edfabd0e9efc5.jpeg",
+    "static/media/bh_hero.png": "/bridgehouse-website-react/home/static/media/bh_hero.6f6dff6f540824ed32fe.png",
+    "static/media/logo_white.png": "/bridgehouse-website-react/home/static/media/logo_white.fd5bfecc8abb589aba31.png",
+    "index.html": "/bridgehouse-website-react/home/index.html",
+    "main.afdde617.css.map": "/bridgehouse-website-react/home/static/css/main.afdde617.css.map",
+    "main.04ff8148.js.map": "/bridgehouse-website-react/home/static/js/main.04ff8148.js.map",
+    "787.391cba01.chunk.js.map": "/bridgehouse-website-react/home/static/js/787.391cba01.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.afdde617.css",
-    "static/js/main.71159241.js"
+    "static/js/main.04ff8148.js"
   ]
 }
