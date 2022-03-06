@@ -7,7 +7,7 @@ import Button from "../../components/Buttons/Button";
 import Reviews from "../../components/Reviews/Reviews";
 import Areas from "../../components/Areas/Areas";
 
-import heroImage from "../../Assets/Images/bh_hero.png";
+import heroImage from "../../Assets/Images/bh_hero.jpg";
 
 const Home = () => {
     const meta = {

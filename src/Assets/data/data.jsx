@@ -1,7 +1,8 @@
 // Images - Areas
-import bar1 from "../../Assets/Images/Areas/bar_01.jpg";
+import bar1 from "../../Assets/Images/Areas/bar_01.jpeg";
 import bar2 from "../../Assets/Images/Areas/bar_02.jpeg";
 import gard1 from "../../Assets/Images/Areas/gard_01.jpeg";
+import gard2 from "../../Assets/Images/Areas/gard_02.jpg";
 import rest1 from "../../Assets/Images/Areas/rest_01.jpg";
 
 // Images - menu
@@ -26,7 +27,7 @@ export const areasData = {
         name: "Garden",
         link: "/menus/bar_garden",
         description: "The garden is around the back of the building, accessed via the stairs to the left of the building. The garden is a lovely environment for food and drinks, especially in the summer.",
-        imgLink: [gard1]
+        imgLink: [gard1, gard2]
     }
 };
 
