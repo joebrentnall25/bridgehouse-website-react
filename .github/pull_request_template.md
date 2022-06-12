@@ -9,3 +9,4 @@
 - [ ] I followed branch naming convention ({ticket_number}: {short description})
 - [ ] I have added a description to the pull request
 - [ ] I have tested the code locally
+- [ ] Reviewers and assignees should be set
