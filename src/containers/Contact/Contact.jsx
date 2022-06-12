@@ -15,10 +15,10 @@ const Contact = () => {
     const form = useRef();
     const [isSuccessful, setIsSuccessful] = useState(false);
 
+    const formService = process.env.NODE_ENV === "development" ? "bridgehouse_dev" : "bridgehouse_support";
     const sendEmail = (e) => {
         e.preventDefault();
-    
-        emailjs.sendForm('bridgehouse_support', 'bridgehouse_default_msg', form.current, 'user_ipKjdSHYHWIzBGxAV38ZZ')
+        emailjs.sendForm(formService, 'bridgehouse_default_msg', form.current, 'user_ipKjdSHYHWIzBGxAV38ZZ')
           .then((result) => {
               console.log(result.text);
               if (result.text === "OK"){
