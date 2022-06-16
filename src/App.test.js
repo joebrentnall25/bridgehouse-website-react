@@ -5,13 +5,41 @@ import Bookings from './components/BookTable/Bookings';
 import { typeData } from "./Assets/data/data";
 
 import Areas from "./components/Areas/Areas";
+import Reviews from "./components/Reviews/Reviews";
+
+import About from "./containers/About/About";
+import Home from './containers/Home/Home';
+import Routing from './containers/Routing/Routing';
+import Menu from './containers/Menu/Menu';
+import Contact from './containers/Contact/Contact';
+
+describe("Test app renders without crash", () => {
+  test("test app loads", () => {
+    shallow(<App/>)
+  })
+  test("test contact loads", () => {
+    shallow(<Contact/>)
+  })
+  test("test home loads", () => {
+    shallow(<Home/>)
+  })
+  test("test menu loads", () => {
+    shallow(<Menu/>)
+  })
+  test("test routing loads", () => {
+    shallow(<Routing/>)
+  })
+  test("test about loads", () => {
+    shallow(<About/>)
+  })
+})
 
 describe("Test booking component", () => {
   test("test table booking", () => {
     const component = shallow(<Bookings type="table"/>);
     const header = component.find('.table-booking__header');
     const text = component.find('.table-booking__info-text');
-    
+
     expect(header.text()).toBe(typeData.table.header);
     expect(text.text()).toBe(typeData.table.text);
   })
@@ -45,5 +73,19 @@ describe("Test areas component", () => {
     expect(description.text().length).toBeGreaterThan(0);
     expect(link.text().length).toBeGreaterThan(0);
     expect(imageLink.text().length).toBeGreaterThan(0);
+  })
+})
+
+describe("Test reviews component", () => {
+  test("test reviews has data", () => {
+    const component = shallow(<Reviews/>);
+    const reviewName = component.find(".reviews__name");
+    const reviewText = component.find(".reviews__para");
+
+    expect(reviewName.text().length).toBeGreaterThan(0);
+    expect(reviewText.text().length).toBeGreaterThan(0);
+  })
+  test("test button component used in reviews", () => {
+
   })
 })
