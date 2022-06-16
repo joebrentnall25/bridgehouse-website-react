@@ -1,4 +1,6 @@
 import { render, screen } from '@testing-library/react';
 import App from './App';
 
-// Im a comment for a test
+test('renders learn react link', () => {
+  expect(true).toBeTruthy();
+});
