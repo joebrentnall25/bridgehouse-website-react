@@ -12,6 +12,7 @@ import Home from './containers/Home/Home';
 import Routing from './containers/Routing/Routing';
 import Menu from './containers/Menu/Menu';
 import Contact from './containers/Contact/Contact';
+import Button from './components/Buttons/Button';
 
 describe("Test app renders without crash", () => {
   test("test app loads", () => {
@@ -56,8 +57,8 @@ describe("Test booking component", () => {
     const header = component.find('.table-booking__header');
     const text = component.find('.table-booking__info-text');
 
-    expect(header.text()).toBe(typeData.default.header);
-    expect(text.text()).toBe(typeData.default.text);
+    expect(header.text().length).toEqual(0);
+    expect(text.text().length).toEqual(0);
   })
 })
 
@@ -77,15 +78,18 @@ describe("Test areas component", () => {
 })
 
 describe("Test reviews component", () => {
+  const component = shallow(<Reviews/>);
   test("test reviews has data", () => {
-    const component = shallow(<Reviews/>);
     const reviewName = component.find(".reviews__name");
     const reviewText = component.find(".reviews__para");
-
     expect(reviewName.text().length).toBeGreaterThan(0);
     expect(reviewText.text().length).toBeGreaterThan(0);
   })
   test("test button component used in reviews", () => {
-
+    const button = component.find(Button)
+    expect(button[0].instance()).toBeCalledWith({
+      type: "simple",
+      text: "Previous"
+    });
   })
 })
