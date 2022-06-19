@@ -88,8 +88,69 @@ describe("Test reviews component", () => {
 })
 
 describe("Test buttons component", () => {
-  test.skip("test primary button", () => {
-    const component = shallow(<Button/>);
+  test("test primary button", () => {
+    const component = shallow(<Button type="primary" to="testurl" text="my text"/>);
+    const button = component.find("button")
+    expect(button.text()).toBe("my text");
+    expect(button.hasClass("button-primary")).toBeTruthy()
   })
+  test("test secondary button", () => {
+    const component = shallow(<Button type="secondary" to="testurl" text="my text"/>);
+    const button = component.find("button")
+    expect(button.text()).toBe("my text");
+    expect(button.hasClass("button-secondary")).toBeTruthy()
+  })  
+  test("test tertiary button", () => {
+    const component = shallow(<Button type="tertiary" to="testurl" text="my text"/>);
+    const button = component.find("button")
+    expect(button.text()).toBe("my text");
+    expect(button.hasClass("button-tertiary")).toBeTruthy()
+  })
+  test("test menu button", () => {
+    const component = shallow(<Button type="menu" to="testurl" text="my text" image="./test/image.png"/>);
+    const para = component.find("p")
+    expect(para.text()).toBe("my text");
+    expect(component.hasClass("button-menu")).toBeTruthy()
+  })
+  test("test menu-sub button", () => {
+    const component = shallow(<Button type="menu-sub" to="testurl" text="my text"/>);
+    expect(component.text()).toBe("my text");
+    expect(component.hasClass("button-menu-sub")).toBeTruthy()
+    expect(component.prop("to")).toBe("#testurl");
+  })
+  test("test simple button", () => {
+    const component = shallow(<Button type="simple" onClick={()=>{}} text="my text"/>);
+    expect(component.text()).toBe("my text");
+    expect(component.hasClass("button-simple")).toBeTruthy()
+  })
+  test("test form button", () => {
+    const component = shallow(<Button type="form" text="my text"/>);
+    expect(component.text()).toBe("my text");
+    expect(component.hasClass("button-form")).toBeTruthy()
+  })
+  describe("test area button states", () => {
+    test("test area button active", () => {
+      const component = shallow(<Button type="area" onClick={()=>{}} active="true" text="my text"/>);
+      expect(component.text()).toBe("my text");
+      expect(component.hasClass("button-area--active")).toBeTruthy()
+    })
+    test("test area button inactive", () => {
+      const component = shallow(<Button type="area" onClick={()=>{}} active="false" text="my text"/>);
+      expect(component.text()).toBe("my text");
+      expect(component.hasClass("button-area")).toBeTruthy()
+    })
+  })
+  test("test footer button", () => {
+    const component = shallow(<Button type="footer" to="/test" text="my text"/>);
+    expect(component.text()).toBe("my text");
+    expect(component.prop("to")).toBe("/test#nav");
+  })
+  test("test default button", () => {
+    const component = shallow(<Button text="my text"/>);
+    expect(component.text()).toBe("my text");
+    expect(component.hasClass("button")).toBeTruthy()
+  })
+
+  
 })
 
