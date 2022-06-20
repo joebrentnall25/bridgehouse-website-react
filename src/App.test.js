@@ -1,4 +1,3 @@
-import { render, screen } from '@testing-library/react';
 import App from './App';
 import { shallow } from 'enzyme';
 import Bookings from './components/BookTable/Bookings';
@@ -13,25 +12,52 @@ import Routing from './containers/Routing/Routing';
 import Menu from './containers/Menu/Menu';
 import Contact from './containers/Contact/Contact';
 import Button from './components/Buttons/Button';
+import Footer from './components/Footer/Footer';
+import Nav from './components/Nav/Nav';
 
 describe("Test app renders without crash", () => {
   test("test app loads", () => {
-    shallow(<App/>)
+    const component = shallow(<App/>)
+    expect(component.exists()).toBeTruthy()
   })
   test("test contact loads", () => {
-    shallow(<Contact/>)
+    const component = shallow(<Contact/>)
+    const form = component.find(".contact__form");
+    const info = component.find(".contact__info")
+    expect(form.exists()).toBeTruthy();
+    expect(info.exists()).toBeTruthy();
   })
   test("test home loads", () => {
-    shallow(<Home/>)
+    const component = shallow(<Home/>)
+    const news = component.find(".home-news")
+    const hero = component.find(".home-hero")
+    expect(news.exists()).toBeTruthy();
+    expect(hero.exists()).toBeTruthy();
   })
   test("test menu loads", () => {
-    shallow(<Menu/>)
+    const component = shallow(<Menu/>)
+    const menu = component.find(".menu")
+    const bookings = component.find("Bookings");
+    expect(menu.exists()).toBeTruthy();
+    expect(bookings.exists()).toBeTruthy();
   })
   test("test routing loads", () => {
-    shallow(<Routing/>)
+    const component = shallow(<Routing/>)
+    const nav = component.find("Nav");
+    const routes = component.find("Routes");
+    const footer = component.find("Footer");
+    expect(nav.exists()).toBeTruthy()
+    expect(routes.exists()).toBeTruthy()
+    expect(footer.exists()).toBeTruthy()
   })
   test("test about loads", () => {
-    shallow(<About/>)
+    const component = shallow(<About/>);
+    const about = component.find(".about");
+    const reviews = component.find("Reviews");
+    const bookings = component.find("Bookings");
+    expect(about.exists()).toBeTruthy();
+    expect(reviews.exists()).toBeTruthy();
+    expect(bookings.exists()).toBeTruthy();
   })
 })
 
@@ -150,7 +176,20 @@ describe("Test buttons component", () => {
     expect(component.text()).toBe("my text");
     expect(component.hasClass("button")).toBeTruthy()
   })
-
-  
 })
 
+describe("test footer component", () => {
+  test("test footer", () => {
+    const component = shallow(<Footer/>);
+    const mainContent = component.find(".footer__main-content");
+    expect(mainContent.exists()).toBeTruthy();
+  })
+})
+
+describe("Test nav component", () => {
+  test("test nav", () => {
+    const component = shallow(<Nav/>);
+    const nav = component.find(".nav");
+    expect(nav.exists()).toBeTruthy();
+  })
+})
