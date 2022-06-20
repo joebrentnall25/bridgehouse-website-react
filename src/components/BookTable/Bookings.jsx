@@ -1,17 +1,9 @@
 import "./Bookings.scss";
+import { typeData as data } from "../../Assets/data/data";
 
 const Bookings = (props) => {
     const { type } = props;
-    const typeData = {
-        table: {
-            header: "Book your table now.",
-            text: "Would you like to book a table with us? Get in touch by phone. Whether this is for food or just drinks."
-        },
-        event: {
-            header: "Book your event now.",
-            text: "Would you like to book an event with us? Get in touch by phone. We will accomodate for your needs."
-        }
-    }
+    const typeData = data;
 
     let currentType;
 
@@ -23,7 +15,10 @@ const Bookings = (props) => {
             currentType = typeData.event;
             break;
         default:
-            console.log("INVALID TYPE: bookings type invalid.");
+            console.warn = function() {
+                throw new Error("ERROR: Unknown booking type!");
+            };
+            currentType = typeData.default;
     }
 
     return (

@@ -15,6 +15,21 @@ import gal1 from "../Images/Gallary/gal_01.jpeg";
 
 export const galleryImages = [gal1, gal1, gal1, gal1, gal1, gal1, gal1, gal1]; 
 
+export const typeData = {
+    table: {
+        header: "Book your table now.",
+        text: "Would you like to book a table with us? Get in touch by phone. Whether this is for food or just drinks."
+    },
+    event: {
+        header: "Book your event now.",
+        text: "Would you like to book an event with us? Get in touch by phone. We will accomodate for your needs."
+    },
+    default: {
+        header: "",
+        text: ""
+    }
+}
+
 export const areasData = {
     Restaurant: {
         name: "Restaurant",
