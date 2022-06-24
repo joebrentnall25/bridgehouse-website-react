@@ -4,7 +4,7 @@ import { HashLink } from "react-router-hash-link";
 import "./Button.scss";
 
 const Button = (props) => {
-    const { type, text, to, onClick, buttonType, active, image} = props;
+    const { type, text, to, onClick, buttonType, active, image, img, alt} = props;
 
     if (type === "primary") {
         return <Link to={to}><button className="button-primary">{text}</button></Link>
@@ -43,6 +43,10 @@ const Button = (props) => {
 
     else if (type === "footer") {
         return <HashLink to={to+"#nav"}>{text}</HashLink>
+    }
+
+    else if (type === "image") {
+        return <a href={to} target="_blank" className="button-img"><img src={img} alt={alt}/></a>
     }
     
     else {
