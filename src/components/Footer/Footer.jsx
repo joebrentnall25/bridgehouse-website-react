@@ -2,6 +2,7 @@ import "./Footer.scss";
 import logo from "../../Assets/Images/logo_white.png";
 import { Link } from "react-router-dom";
 import Button from "../Buttons/Button";
+import hygeineRating from "../../Assets/Images/hygeine_rating.jpeg"
 
 // Icons
 import {BsFacebook} from "react-icons/bs"
@@ -12,10 +13,11 @@ const Footer = () => {
     <footer className="footer">
         <div className="footer__main-content">
             <div className="footer__basic-info">
-                <img src={logo} alt=""/>
+                <img src={logo} alt="bridgehouse logo"/>
                 <a className="footer__link-to-maps" target="_blank" rel="noreferrer" href="https://goo.gl/maps/neh3ysAx2RQHVMJW6">Derby Rd, Ambergate, Belper DE56 2EJ</a>
                 <p>Monday-Saturday: <span className="highlight">8am-3pm</span></p>
                 <p>Sunday: <span className="highlight">9am-2pm</span></p>
+                <Button className="footer__hygeine" type="image" to="https://hygieneratings.uk/1364337-bridge-house-ambergate" img={hygeineRating} alt="5* hygeine rating" /> 
             </div>
             <div className="footer__menus">
                 <h4>Menus</h4>
