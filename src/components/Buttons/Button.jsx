@@ -46,7 +46,7 @@ const Button = (props) => {
     }
 
     else if (type === "image") {
-        return <a href={to} target="_blank" className="button-img"><img src={img} alt={alt}/></a>
+        return <a href={to} target="_blank" rel="noreferrer" className="button-img"><img src={img} alt={alt}/></a>
     }
     
     else {
