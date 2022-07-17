@@ -33,6 +33,11 @@
         .footer__link-to-maps {
             color: $light;
         }
+        .footer__basic-info {
+            a {
+                margin-top: 1rem;
+            }
+        }
     }
     .footer__copywrite {
         margin: 2rem 10%;
