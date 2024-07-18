@@ -40,7 +40,7 @@ const Reviews = () => {
 
     return (
     <section className="reviews">
-        <div className="reviews__header container">
+        <div className="reviews__header">
             <h2 className="reviews__heading primary">Our Reviews</h2>
             <h3>Hear what our customers say.</h3>
             <p>Use buttons to cycle through some of our customers reviews.</p>

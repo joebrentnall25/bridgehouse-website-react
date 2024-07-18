@@ -40,13 +40,13 @@ export const areasData = {
     Bar: {
         name: "Bar",
         link: "/menus/bar_garden",
-        description: "The bar can be found around the back of the restaurant accessed via the steps to the left of the building. The bar serves alcholic drinks and other beverages. The bar serves a champagne breakfast menu.",
+        description: "The bar serves alcholic drinks and other beverages.",
         imgLink: [bar1, bar2],
     },
     Garden: {
         name: "Garden",
         link: "/menus/bar_garden",
-        description: "The garden is around the back of the building, accessed via the stairs to the left of the building. The garden is a lovely environment for food and drinks, especially in the summer.",
+        description: "The garden is a lovely environment for food and drinks, especially in the summer.",
         imgLink: [gard1, gard2]
     }
 };
