@@ -1,7 +1,9 @@
 @use "../../Assets/Styles/Utility/variables" as *;
 
 .reviews {
+    margin: 2rem 0;
     &__header {
+        margin: 4rem 10% 2rem 10%;
         h2 {
             margin-bottom: 1rem;
         }
@@ -30,9 +32,18 @@
 
 @media screen and (min-width: 1024px){
     .reviews {
+        display: grid;
+        grid-template-columns: 1fr 1.5fr;
+        grid-template-rows: 1fr;
+        grid-column-gap: 50px;
+        grid-row-gap: 0px;
+        align-items: center;
+        margin: 2rem 10% 0 10%;
+        
         &__review {
             padding: 2rem;
-            margin: 0 10%;
+            margin: 0;
+            height: fit-content;
         }
     }
 }

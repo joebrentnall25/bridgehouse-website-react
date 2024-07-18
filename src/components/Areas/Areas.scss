@@ -32,19 +32,24 @@
 @media screen and (min-width: 768px) {
     .areas {
         &__main {
-            grid-template-columns: 1fr 1fr;
+            grid-template-columns: 1fr 1fr 1fr;
+            align-items: center;
             &-buttons {
                 width: 20vw;
                 margin-bottom: 0;
+                grid-row: 1;
+                grid-column: 3;
+                justify-self: flex-end;
             }
             &-content {
-                text-align: right;
-                width: 30vw;
-                justify-self: flex-end;
+                grid-row: 1;
+                grid-column: 1 / span 2;
+                text-align: left;
+                // width: 30vw;
             }
             &-img {
                 grid-row: 2;
-                grid-column: 1 / span 2;
+                grid-column: 1 / span 3;
             }
         }
     }
