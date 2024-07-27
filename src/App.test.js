@@ -134,8 +134,8 @@ describe("Test buttons component", () => {
   })
   test("test menu button", () => {
     const component = shallow(<Button type="menu" onClick={() => {}} text="my text"/>);
-    const para = component.find("p")
-    expect(para.text()).toBe("my text");
+    const button = component.find("button")
+    expect(button.text()).toBe("my text");
     expect(component.hasClass("button-menu")).toBeTruthy()
   })
   test("test menu-sub button", () => {
