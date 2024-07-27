@@ -33,19 +33,19 @@ export const typeData = {
 export const areasData = {
     Restaurant: {
         name: "Restaurant",
-        link: "/menus/restaurant",
+        link: "/menus/",
         description: "The restaurant is situated at the front of the building. It serves a breakfast and brunch menu.",
         imgLink: [rest1],
     },
     Bar: {
         name: "Bar",
-        link: "/menus/bar_garden",
+        link: "/menus/",
         description: "The bar serves alcholic drinks and other beverages.",
         imgLink: [bar1, bar2],
     },
     Garden: {
         name: "Garden",
-        link: "/menus/bar_garden",
+        link: "/menus/",
         description: "The garden is a lovely environment for food and drinks, especially in the summer.",
         imgLink: [gard1, gard2]
     }
@@ -73,9 +73,9 @@ export const reviews = [
         text: "Bridge House is just amazing! The owners have done a great job renovating the place and the menu is extensive. In addition they also provide a great Vegan Menu! Great food & great service… really impressed.",
     },
 ];
-export const menu = {
-    restaurant: {
-        altName: "RESTAURANT",
+export const menu = [
+    {
+        altName: "Restaurant",
         image: restaurantImg,
         items: [
             {
@@ -83,202 +83,202 @@ export const menu = {
                 description:
                     "Sausage, bacon, black pudding, hash browns, fresh tomato, mushrooms, egg, beans, tinned tomatoes, toast, fried bread",
                 symbols: ["vAvailable"],
-                category: "breakfast",
+                category: "Breakfast",
             },
             {
                 item: "Lighter Breakfast",
                 description: "Choose 6 items from Full Breakfast",
                 symbols: ["vAvailable"],
-                category: "breakfast",
+                category: "Breakfast",
             },
             {
                 item: "Cobs & Sandwiches",
                 description:
                     "Bacon / Sausage Add extra items including; egg, tomatoes, cheese, black pudding, hash brown, mushrooms",
                 symbols: ["vAvailable"],
-                category: "breakfast",
+                category: "Breakfast",
             },
             {
                 item: "Eggs Benedict",
                 description:
                     "Poached eggs, crispy bacon and hollandaise sauce served on malted toast",
                 symbols: [],
-                category: "breakfast",
+                category: "Breakfast",
             },
             {
                 item: "Eggs Royale",
                 description:
                     "Poached eggs, smoked salmon and hollandaise sauce served on malted toast",
                 symbols: [],
-                category: "breakfast",
+                category: "Breakfast",
             },
             {
                 item: "Eggs Florentine",
                 description:
                     "Poached eggs, spinach and hollandaise sauce serverd on malted toast",
                 symbols: [],
-                category: "breakfast",
+                category: "Breakfast",
             },
             {
                 item: "Avocado on Toast with chilli flakes",
                 description: "",
                 symbols: ["hot"],
-                category: "brunch",
+                category: "Brunch",
             },
             {
                 item: "Smoked Salmon, Avocado or Scrambled Eggs on Focaccia Bread",
                 description: "",
                 symbols: [],
-                category: "brunch",
+                category: "Brunch",
             },
             {
                 item: "Smoked Haddock with Poached Eggs & Hollandaise",
                 description: "",
                 symbols: [],
-                category: "brunch",
+                category: "Brunch",
             },
             {
                 item: "Welsh Rarebit",
                 description: "Add bacon",
                 symbols: ["vAvailable"],
-                category: "brunch",
+                category: "Brunch",
             },
             {
                 item: "Sardines on Toast",
                 description: "",
                 symbols: [],
-                category: "brunch",
+                category: "Brunch",
             },
             {
                 item: "Name an Omelette",
                 description: "Choose what you want in your omelette",
                 symbols: [],
-                category: "brunch",
+                category: "Brunch",
             },
             {
                 item: "Halloumi, Avocado & Crispy Bacon",
                 description: "",
                 symbols: ["vAvailable"],
-                category: "brunch",
+                category: "Brunch",
             },
             {
                 item: "Mushrooms on Toasted Focaccia with Cherry Tomatoes",
                 description: "",
                 symbols: [],
-                category: "brunch",
+                category: "Brunch",
             },
             {
                 item: "Potato & Leek Fritters with Asparagus & Chilli",
                 description: "",
                 symbols: [],
-                category: "brunch",
+                category: "Brunch",
             },
             {
                 item: "Pancakes with Crispy Bacon & Syrup",
                 description: "",
                 symbols: ["vAvailable"],
-                category: "breakfast",
+                category: "Breakfast",
             },
             {
                 item: "Waffles & Ice Cream with Berries",
                 description: "",
                 symbols: [],
-                category: "breakfast",
+                category: "Breakfast",
             },
             {
                 item: "Berry & Yogurt Granola",
                 description: "",
                 symbols: [],
-                category: "breakfast",
+                category: "Breakfast",
             },
             {
                 item: "Toasted Tea Cake",
                 description: "",
                 symbols: [],
-                category: "breakfast",
+                category: "Breakfast",
             },
             {
                 item: "Toast & Jam",
                 description: "",
                 symbols: [],
-                category: "breakfast",
+                category: "Breakfast",
             },
             {
                 item: "The Best Porridge",
                 description: "",
                 symbols: [],
-                category: "breakfast",
+                category: "Breakfast",
             },
             {
                 item: "Bridge House Sausage & Egg Muffin with Cheese",
                 description: "",
                 symbols: [],
-                category: "children",
+                category: "Kids",
             },
             {
                 item: "Beans on Toastie",
                 description: "",
                 symbols: [],
-                category: "children",
+                category: "Kids",
             },
             {
                 item: "Bacon Sandwich",
                 description: "",
                 symbols: ["vAvailable"],
-                category: "children",
+                category: "Kids",
             },
             {
                 item: "Sausage Sandwich",
                 description: "",
                 symbols: ["vAvailable"],
-                category: "children",
+                category: "Kids",
             },
             {
                 item: "Cheese On Toast",
                 description: "",
                 symbols: [],
-                category: "children",
+                category: "Kids",
             },
             {
                 item: "Pancakes with Maple Syrup & Bacon",
                 description: "",
                 symbols: [],
-                category: "children",
+                category: "Kids",
             },
             {
                 item: "Pancakes with Ice Cream & Berries",
                 description: "",
                 symbols: [],
-                category: "children",
+                category: "Kids",
             },
             {
                 item: "Waffles with Ice Cream & Berries",
                 description: "",
                 symbols: [],
-                category: "children",
+                category: "Kids",
             },
             {
                 item: "Mini Breakfast",
                 description: "Sausage, egg, beans, hash brown, toast",
                 symbols: ["vAvailable"],
-                category: "children",
+                category: "Kids",
             },
             {
                 item: "Toast & Jam",
                 description: "The choice of either white or brown toast served with a choice of jams.",
                 symbols: [],
-                category: "children",
+                category: "Kids",
             },
             {
                 item: "The Best Porridge",
                 description: "",
                 symbols: [],
-                category: "children",
+                category: "Kids",
             },
         ],
     },
-    drinks: {
-        altName: "DRINKS",
+    {
+        altName: "Drinks",
         image: drinksImg,
         items: [
             {
@@ -393,8 +393,8 @@ export const menu = {
             },
         ],
     },
-    bar_garden: {
-        altName: "BAR & GARDEN",
+    {
+        altName: "Bar and Garden",
         image: barGardenImg,
         items: [
             {
@@ -483,21 +483,5 @@ export const menu = {
                 category: "Option 2",
             },
         ],
-    },
-    takeaway: {
-        altName: "TAKEAWAY",
-        image: drinksImg,
-        items: [
-            {
-                item: "",
-                description: "Right now we only support takeaway orders over the phone. Eventually you will be able to order online.",
-                category: "Info"
-            },
-            {
-                item: "Phone number",
-                description: '01332 482549',
-                category: "Info"
-            }
-        ]
     }
-};
+]

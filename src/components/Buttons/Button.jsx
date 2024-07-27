@@ -4,10 +4,16 @@ import { HashLink } from "react-router-hash-link";
 import "./Button.scss";
 
 const Button = (props) => {
-    const { type, text, to, onClick, buttonType, active, image, img, alt} = props;
+    const { type, text, to, onClick, buttonType, active, img, alt, isActive, className} = props;
 
     if (type === "primary") {
         return <Link to={to}><button className="button-primary">{text}</button></Link>
+    }
+
+    if (type === "secondary-onclick") {
+        return <button 
+            className="button-secondary" 
+            onClick={onClick}>{text}</button>
     }
 
     else if (type === "secondary") {
@@ -19,7 +25,15 @@ const Button = (props) => {
     }
     
     else if (type === "menu") {
-        return <HashLink className="button-menu" to={to+"#menu"}><img className="button-menu__img" src={image} alt="" /><p className="button-menu__text">{text}</p></HashLink>
+        return (
+            <button 
+                className={`${isActive ? "button-menu--active" : "button-menu"} ${className}` }
+                to={to+"#menu"}
+                onClick={onClick}
+            >
+                {text}
+            </button>
+        )
     } 
     
     else if (type==="menu-sub") {
