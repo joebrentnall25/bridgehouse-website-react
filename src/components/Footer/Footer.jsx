@@ -21,9 +21,9 @@ const Footer = () => {
             </div>
             <div className="footer__menus">
                 <h4>Menus</h4>
-                <Button type="footer" to="/menus/restaurant" text="Restaurant"/>
-                <Button type="footer" to="/menus/bar_garden" text="Bar & Garden"/>
-                <Button type="footer" to="/menus/drinks" text="Drinks"/>
+                <Button type="footer" to="/menus" text="Restaurant"/>
+                <Button type="footer" to="/menus" text="Bar & Garden"/>
+                <Button type="footer" to="/menus" text="Drinks"/>
             </div>
             <div className="footer__pages">
                 <h4>Pages</h4>
