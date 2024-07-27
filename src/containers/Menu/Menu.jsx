@@ -1,6 +1,5 @@
 // Libraries
-import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { useState } from "react";
 import { Helmet } from "react-helmet";
 
 // Styles
