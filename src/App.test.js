@@ -36,7 +36,7 @@ describe("Test app renders without crash", () => {
   })
   test("test menu loads", () => {
     const component = shallow(<Menu/>)
-    const menu = component.find(".menu")
+    const menu = component.find(".menu-hero")
     const bookings = component.find("Bookings");
     expect(menu.exists()).toBeTruthy();
     expect(bookings.exists()).toBeTruthy();
@@ -133,7 +133,7 @@ describe("Test buttons component", () => {
     expect(button.hasClass("button-tertiary")).toBeTruthy()
   })
   test("test menu button", () => {
-    const component = shallow(<Button type="menu" to="testurl" text="my text" image="./test/image.png"/>);
+    const component = shallow(<Button type="menu" onClick={() => {}} text="my text"/>);
     const para = component.find("p")
     expect(para.text()).toBe("my text");
     expect(component.hasClass("button-menu")).toBeTruthy()
