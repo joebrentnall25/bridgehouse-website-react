@@ -5,11 +5,6 @@ import gard1 from "../../Assets/Images/Areas/gard_01.jpeg";
 import gard2 from "../../Assets/Images/Areas/gard_02.jpg";
 import rest1 from "../../Assets/Images/Areas/rest_01.jpg";
 
-// Images - menu
-import drinksImg from "../Images/Menu/drinksImg.jpeg";
-import restaurantImg from "../Images/Menu/drinksImg.jpeg";
-import barGardenImg from "../Images/Menu/drinksImg.jpeg";
-
 // Gallary Images
 import gal1 from "../Images/Gallary/gal_01.jpeg";
 
@@ -76,7 +71,6 @@ export const reviews = [
 export const menu = [
     {
         altName: "Restaurant",
-        image: restaurantImg,
         items: [
             {
                 item: "Full English",
@@ -279,7 +273,6 @@ export const menu = [
     },
     {
         altName: "Drinks",
-        image: drinksImg,
         items: [
             {
                 item: "Latte",
@@ -390,97 +383,6 @@ export const menu = [
                 item: "Bottled Carbonated Water",
                 description: "",
                 category: "Cold",
-            },
-        ],
-    },
-    {
-        altName: "Bar and Garden",
-        image: barGardenImg,
-        items: [
-            {
-                item: "Prosecco",
-                description: "",
-                category: "Drinks",
-            },
-            {
-                item: "Orange Juice",
-                description: "",
-                category: "Drinks",
-            },
-            {
-                item: "Coffee",
-                description: "",
-                category: "Drinks",
-            },
-            {
-                item: "Tea",
-                description: "",
-                category: "Drinks",
-            },
-            {
-                item: "Berries, Granola & Yogurt",
-                description: "",
-                category: "Start with",
-            },
-            {
-                item: "Croissants & Rolls",
-                description: "",
-                category: "Start with",
-            },
-            {
-                item: "Eggs Benedict",
-                description: "Poached eggs and bacon on toasted muffins topped with hollandaise sauce",
-                category: "Option 1",
-            },
-            {
-                item: "Eggs Royale",
-                description: "Poached eggs and smoked salmon on toasted muffins topped with hollandaise sauce",
-                category: "Option 1",
-            },
-            {
-                item: "Eggs Florentine",
-                description: "Poached eggs with spinach on toasted muffins topped with hollandaise sauce",
-                category: "Option 1",
-            },
-            {
-                item: "",
-                description: "All served buffet style on sharing platters.",
-                category: "Option 2",
-            },
-            {
-                item: "Scrambled Eggs",
-                description: "",
-                category: "Option 2",
-            },
-            {
-                item: "Bacon & Sausage",
-                description: "",
-                category: "Option 2",
-            },
-            {
-                item: "Vine Tomatoes",
-                description: "",
-                category: "Option 2",
-            },
-            {
-                item: "Mushrooms",
-                description: "",
-                category: "Option 2",
-            },
-            {
-                item: "Smoked Salmon",
-                description: "",
-                category: "Option 2",
-            },
-            {
-                item: "Avocado",
-                description: "",
-                category: "Option 2",
-            },
-            {
-                item: "Creme Fraiche",
-                description: "",
-                category: "Option 2",
             },
         ],
     }
