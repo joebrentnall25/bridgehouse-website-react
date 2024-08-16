@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/bridgehouse-website-react/static/css/main.596ea1a7.css",
-    "main.js": "/bridgehouse-website-react/static/js/main.2e9472b4.js",
+    "main.css": "/bridgehouse-website-react/static/css/main.ddff30c9.css",
+    "main.js": "/bridgehouse-website-react/static/js/main.9dada135.js",
     "static/js/787.391cba01.chunk.js": "/bridgehouse-website-react/static/js/787.391cba01.chunk.js",
     "static/media/bh_hero.jpg": "/bridgehouse-website-react/static/media/bh_hero.17e552fa4ce52ad2c307.jpg",
     "static/media/rest_01.jpg": "/bridgehouse-website-react/static/media/rest_01.8433005f2899bcd0b468.jpg",
@@ -9,17 +9,16 @@
     "static/media/gard_01.jpeg": "/bridgehouse-website-react/static/media/gard_01.ff97c16e7e774d07c8e3.jpeg",
     "static/media/gard_02.jpg": "/bridgehouse-website-react/static/media/gard_02.a1dc2b8ab68f6c1f0929.jpg",
     "static/media/bar_02.jpeg": "/bridgehouse-website-react/static/media/bar_02.89102a74f6583ab02066.jpeg",
-    "static/media/drinksImg.jpeg": "/bridgehouse-website-react/static/media/drinksImg.1f63953edfabd0e9efc5.jpeg",
     "static/media/bar_01.jpeg": "/bridgehouse-website-react/static/media/bar_01.d34d42f2ea1fb86b88b8.jpeg",
     "static/media/logo_white.png": "/bridgehouse-website-react/static/media/logo_white.fd5bfecc8abb589aba31.png",
     "static/media/hygeine_rating.jpeg": "/bridgehouse-website-react/static/media/hygeine_rating.d2c88c99be3edbde1769.jpeg",
     "index.html": "/bridgehouse-website-react/index.html",
-    "main.596ea1a7.css.map": "/bridgehouse-website-react/static/css/main.596ea1a7.css.map",
-    "main.2e9472b4.js.map": "/bridgehouse-website-react/static/js/main.2e9472b4.js.map",
+    "main.ddff30c9.css.map": "/bridgehouse-website-react/static/css/main.ddff30c9.css.map",
+    "main.9dada135.js.map": "/bridgehouse-website-react/static/js/main.9dada135.js.map",
     "787.391cba01.chunk.js.map": "/bridgehouse-website-react/static/js/787.391cba01.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.596ea1a7.css",
-    "static/js/main.2e9472b4.js"
+    "static/css/main.ddff30c9.css",
+    "static/js/main.9dada135.js"
   ]
 }
