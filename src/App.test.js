@@ -30,7 +30,7 @@ describe("Test app renders without crash", () => {
   test("test home loads", () => {
     const component = shallow(<Home/>)
     const news = component.find(".home-news")
-    const hero = component.find(".home-hero")
+    const hero = component.find(".home-hero__img")
     expect(news.exists()).toBeTruthy();
     expect(hero.exists()).toBeTruthy();
   })

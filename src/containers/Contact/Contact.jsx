@@ -38,11 +38,11 @@ const Contact = () => {
             <meta charSet="utf-8" />
             <title>Contact Us | Bridgehouse Ambergate</title>
         </Helmet>
-        <header className="contact-hero">
+        <header className="container contact-hero">
             <h2 className="menu-hero__title primary">Contact</h2>
             <h3 className="menu-hero__subheader">Get in touch.</h3>
         </header>
-        <div className="contact">
+        <div className="contact container">
             <div className="contact__info dark">
                 <div className="contact__info-text">
                     <h4 className="contact__info-header">Contact Details</h4>
