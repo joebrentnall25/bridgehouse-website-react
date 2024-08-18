@@ -1,24 +1,22 @@
 {
   "files": {
-    "main.css": "/bridgehouse-website-react/static/css/main.ddff30c9.css",
-    "main.js": "/bridgehouse-website-react/static/js/main.9dada135.js",
+    "main.css": "/bridgehouse-website-react/static/css/main.63152672.css",
+    "main.js": "/bridgehouse-website-react/static/js/main.cf9c7dc8.js",
     "static/js/787.391cba01.chunk.js": "/bridgehouse-website-react/static/js/787.391cba01.chunk.js",
-    "static/media/bh_hero.jpg": "/bridgehouse-website-react/static/media/bh_hero.17e552fa4ce52ad2c307.jpg",
-    "static/media/rest_01.jpg": "/bridgehouse-website-react/static/media/rest_01.8433005f2899bcd0b468.jpg",
-    "static/media/gal_01.jpeg": "/bridgehouse-website-react/static/media/gal_01.4f8d7ce7606c90183b9b.jpeg",
-    "static/media/gard_01.jpeg": "/bridgehouse-website-react/static/media/gard_01.ff97c16e7e774d07c8e3.jpeg",
-    "static/media/gard_02.jpg": "/bridgehouse-website-react/static/media/gard_02.a1dc2b8ab68f6c1f0929.jpg",
-    "static/media/bar_02.jpeg": "/bridgehouse-website-react/static/media/bar_02.89102a74f6583ab02066.jpeg",
-    "static/media/bar_01.jpeg": "/bridgehouse-website-react/static/media/bar_01.d34d42f2ea1fb86b88b8.jpeg",
+    "static/media/Home.jpg": "/bridgehouse-website-react/static/media/Home.e8b63e67511276b2059f.jpg",
+    "static/media/Restaurant2.JPG": "/bridgehouse-website-react/static/media/Restaurant2.aad365f6c2cb48c37b66.JPG",
+    "static/media/Bar2.JPG": "/bridgehouse-website-react/static/media/Bar2.2dd7550b916a876aa093.JPG",
+    "static/media/Restaurant1.JPG": "/bridgehouse-website-react/static/media/Restaurant1.9999d2c76907f8ab10a8.JPG",
+    "static/media/Bar1.JPG": "/bridgehouse-website-react/static/media/Bar1.54b77d795b63abfa7bee.JPG",
     "static/media/logo_white.png": "/bridgehouse-website-react/static/media/logo_white.fd5bfecc8abb589aba31.png",
     "static/media/hygeine_rating.jpeg": "/bridgehouse-website-react/static/media/hygeine_rating.d2c88c99be3edbde1769.jpeg",
     "index.html": "/bridgehouse-website-react/index.html",
-    "main.ddff30c9.css.map": "/bridgehouse-website-react/static/css/main.ddff30c9.css.map",
-    "main.9dada135.js.map": "/bridgehouse-website-react/static/js/main.9dada135.js.map",
+    "main.63152672.css.map": "/bridgehouse-website-react/static/css/main.63152672.css.map",
+    "main.cf9c7dc8.js.map": "/bridgehouse-website-react/static/js/main.cf9c7dc8.js.map",
     "787.391cba01.chunk.js.map": "/bridgehouse-website-react/static/js/787.391cba01.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ddff30c9.css",
-    "static/js/main.9dada135.js"
+    "static/css/main.63152672.css",
+    "static/js/main.cf9c7dc8.js"
   ]
 }
