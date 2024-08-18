@@ -1,19 +1,13 @@
 // Images - Areas
-import bar1 from "../../Assets/Images/Areas/bar_01.jpeg";
-import bar2 from "../../Assets/Images/Areas/bar_02.jpeg";
-import gard1 from "../../Assets/Images/Areas/gard_01.jpeg";
-import gard2 from "../../Assets/Images/Areas/gard_02.jpg";
-import rest1 from "../../Assets/Images/Areas/rest_01.jpg";
-
-// Gallary Images
-import gal1 from "../Images/Gallary/gal_01.jpeg";
-
-export const galleryImages = [gal1, gal1, gal1, gal1, gal1, gal1, gal1, gal1]; 
+import restaurant1 from "../Images/Areas/Restaurant1.JPG"
+import restaurant2 from "../Images/Areas/Restaurant2.JPG"
+import bar1 from "../Images/Areas/Bar1.JPG"
+import bar2 from "../Images/Areas/Bar2.JPG"
 
 export const typeData = {
     table: {
         header: "Book your table now.",
-        text: "Would you like to book a table with us? Get in touch by phone. Whether this is for food or just drinks."
+        text: "Looking to book a table? Give us a call! Whether you're here for a meal or just drinks, we're happy to host you"
     },
     event: {
         header: "Book your event now.",
@@ -30,7 +24,7 @@ export const areasData = {
         name: "Restaurant",
         link: "/menus/",
         description: "The restaurant is situated at the front of the building. It serves a breakfast and brunch menu.",
-        imgLink: [rest1],
+        imgLink: [restaurant1, restaurant2],
     },
     Bar: {
         name: "Bar",
@@ -42,7 +36,7 @@ export const areasData = {
         name: "Garden",
         link: "/menus/",
         description: "The garden is a lovely environment for food and drinks, especially in the summer.",
-        imgLink: [gard1, gard2]
+        imgLink: [restaurant1]
     }
 };
 

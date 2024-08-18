@@ -7,7 +7,7 @@ import Button from "../../components/Buttons/Button";
 import Reviews from "../../components/Reviews/Reviews";
 import Areas from "../../components/Areas/Areas";
 
-import heroImage from "../../Assets/Images/bh_hero.jpg";
+import homeImage from "../../Assets/Images/Home/Home.jpg";
 
 const Home = () => {
     const news = [
@@ -36,15 +36,16 @@ const Home = () => {
                 <title>Bridgehouse Ambergate | Book your visit today!</title>
             </Helmet>
             <header className="dark">
-                <div className="home-hero">
+                {/* <div className="home-hero">
                 <div className="home-hero__content">    
                         <h3 className="home-hero__content-title">Welcome to Bridgehouse</h3>
                         <p className="home-hero__content-subtitle">Be sure to check out our menus and book a table before your next visit.</p>
                         <Button to="/menus" type="primary" text="View Menus"/>
                     </div>
-                    <img src={heroImage} alt="" className="home-hero__img" />
+                    <img src={homeImage} alt="" className="home-hero__img" />
                     
-                </div>
+                </div> */}
+                <img src={homeImage} alt="" className="home-hero__img" />
             </header>
             <Areas/>
             <section className="home-news">
