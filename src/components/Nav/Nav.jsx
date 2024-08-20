@@ -18,8 +18,10 @@ const Nav = () => {
     <nav className="dark" id="nav">
         <div className="nav">            
             <div className="nav__main">
-                <button onClick={() => toggleMenu()}><FontAwesomeIcon icon={faBars}/></button>
-                <img src={logo}alt="Bridgehouse Ambergate"/>
+                <NavLink to="/home">
+                    <button onClick={() => toggleMenu()}><FontAwesomeIcon icon={faBars}/></button>
+                    <img src={logo}alt="Bridgehouse Ambergate"/>
+                </NavLink>
             </div>
             <div className="nav__links--large">
                 <ul className={toggle ? "nav__links show-nav" : "nav__links"}>
