@@ -1,6 +1,4 @@
 import "./Contact.scss";
-import { useRef, useState } from "react";
-import emailjs from '@emailjs/browser';
 import { Helmet } from "react-helmet";
 
 // Components
@@ -9,7 +7,7 @@ import Map from "../../components/Map/Map";
 
 
 const Contact = () => {
-    const form = useRef();
+    // const form = useRef();
     // const [isSuccessful, setIsSuccessful] = useState(false);
 
     // const sendEmail = (e) => {
