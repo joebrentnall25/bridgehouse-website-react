@@ -37,7 +37,7 @@ const Footer = () => {
                 <a href="mailto:info@bridgehouseambergate.co.uk">Email</a>
                 <a href="https://goo.gl/maps/yCK5BfKazBZrhiom7" target="_blank" rel="noreferrer">Directions</a>
                 <a href="https://www.tripadvisor.co.uk/Restaurant_Review-g2093189-d23163521-Reviews-Bridge_House-Ambergate_Derbyshire_England.html" target="_blank" rel="noreferrer"><FaTripadvisor size={42}/></a>
-                <a href="https://www.facebook.com/BridgeHouseAmbergate" target="_blank"><BsFacebook size={42}/></a>
+                <a href="https://www.facebook.com/BridgeHouseAmbergate" target="_blank" rel="noreferrer"><BsFacebook size={42}/></a>
             </div>
         </div>
         <div className="footer__copywrite">
