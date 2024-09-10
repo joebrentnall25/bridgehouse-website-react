@@ -12,20 +12,20 @@ import homeImage from "../../Assets/Images/Home/Home.jpg";
 const Home = () => {
     const news = [
         {
-            title: "View Our Story",
-            para: "Find out a little more about bridgehouse and how it all started.",
+            title: "Bridgehouse Rooms",
+            para: "Book your room at Bridgehouse and experience the beauty of the Peak District. Enjoy a relaxing stay with plenty of opportunities for exploration nearby. Call use to find out more!",
             image: "./something.png",
-            imageAlt: "Bridgehouse ",
+            imageAlt: "Book a Bridgehouse Room for you stay in the peak district",
             buttonText: "Find out more",
-            linkTo: "/About"
+            linkTo: "/Contact"
         },
         {
-            title: "Want to be notified?",
-            para: "Sign up to our mailing list to hear about any new news about Bridgehouse.",
+            title: "Book us for your private event",
+            para: "Elevate your next private event with our exceptional service and bespoke menus tailored to your guests. Whether it’s a small gathering, birthday, or special celebration, we offer everything from buffets to BBQs, ensuring every detail is perfect. Let us bring your vision to life and make your occasion truly memorable.",
             image: "./something.png",
-            imageAlt: "Image alt",
-            buttonText: "Sign Up",
-            linkTo: "/About"
+            imageAlt: "Bridgehouse for you private event",
+            buttonText: "Get in touch",
+            linkTo: "/Contact"
         }
     ]
 
@@ -36,17 +36,9 @@ const Home = () => {
                 <title>Bridgehouse Ambergate | Book your visit today!</title>
             </Helmet>
             <header className="dark">
-                {/* <div className="home-hero">
-                <div className="home-hero__content">    
-                        <h3 className="home-hero__content-title">Welcome to Bridgehouse</h3>
-                        <p className="home-hero__content-subtitle">Be sure to check out our menus and book a table before your next visit.</p>
-                        <Button to="/menus" type="primary" text="View Menus"/>
-                    </div>
-                    <img src={homeImage} alt="" className="home-hero__img" />
-                    
-                </div> */}
                 <img src={homeImage} alt="" className="home-hero__img" />
             </header>
+            <Bookings type="table" dark={true} />
             <Areas/>
             <section className="home-news">
                 {news.map((article, index) => {
@@ -61,8 +53,7 @@ const Home = () => {
                     </div>)
                 })}
             </section>
-            <Reviews/>
-            <Bookings type="table" />
+            <Reviews className="home-reviews"/>            
         </>
     );
 };
