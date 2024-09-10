@@ -26,7 +26,6 @@ const Routing = () => {
                     <Route path="/home" element={<Home/>}/>
                     <Route path="/menus" element={<Navigate replace to="/menus/restaurant"/>} />
                     <Route path="/menus/" element={<Menu/>}/>
-                    <Route path="/about" element={<About/>}/>
                     <Route path="/contact" element={<Contact/>}/>
                 </Routes>
                 <Footer/>

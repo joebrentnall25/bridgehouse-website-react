@@ -31,9 +31,6 @@ const Nav = () => {
                     <li><NavLink to="/menus" style={({isActive}) => ({
                         color: isActive ? '#FFF' : '#929597'
                     })}><span className="hover">Our Menus</span></NavLink></li>
-                    <li><NavLink to="/about" style={({isActive}) => ({
-                        color: isActive ? '#FFF' : '#929597'
-                    })}><span className="hover">About Us</span></NavLink></li>
                     <li><NavLink to="/contact" style={({isActive}) => ({
                         color: isActive ? '#FFF' : '#929597'
                     })}><span className="hover">Contact</span></NavLink></li>
