@@ -22,18 +22,21 @@ export const typeData = {
 export const areasData = {
     Restaurant: {
         name: "Restaurant",
+        displayName: "Restaurant",
         link: "/menus/",
         description: "The restaurant is situated at the front of the building. It serves a breakfast and brunch menu.",
         imgLink: [restaurant1, restaurant2],
     },
     Bar: {
         name: "Bar",
+        displayName: "Finley's Bar",
         link: "/menus/",
         description: "The bar serves alcholic drinks and other beverages.",
         imgLink: [bar1, bar2],
     },
     Garden: {
         name: "Garden",
+        displayName: "Poppy's Secret Garden",
         link: "/menus/",
         description: "The garden is a lovely environment for food and drinks, especially in the summer.",
         imgLink: [restaurant1]
