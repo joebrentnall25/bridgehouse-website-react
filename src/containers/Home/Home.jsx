@@ -8,13 +8,15 @@ import Reviews from "../../components/Reviews/Reviews";
 import Areas from "../../components/Areas/Areas";
 
 import homeImage from "../../Assets/Images/Home/Home.jpg";
+import eventPreview from "../../Assets/Images/Preview/EventPreview.jpg";
+import roomPreview from "../../Assets/Images/Preview/RoomPreview.JPG";
 
 const Home = () => {
     const news = [
         {
             title: "Bridgehouse Rooms",
             para: "Book your room at Bridgehouse and experience the beauty of the Peak District. Enjoy a relaxing stay with plenty of opportunities for exploration nearby. Call use to find out more!",
-            image: "./something.png",
+            image: roomPreview,
             imageAlt: "Book a Bridgehouse Room for you stay in the peak district",
             buttonText: "Find out more",
             linkTo: "/Contact"
@@ -22,7 +24,7 @@ const Home = () => {
         {
             title: "Book us for your private event",
             para: "Elevate your next private event with our exceptional service and bespoke menus tailored to your guests. Whether it’s a small gathering, birthday, or special celebration, we offer everything from buffets to BBQs, ensuring every detail is perfect. Let us bring your vision to life and make your occasion truly memorable.",
-            image: "./something.png",
+            image: eventPreview,
             imageAlt: "Bridgehouse for you private event",
             buttonText: "Get in touch",
             linkTo: "/Contact"
