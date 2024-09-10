@@ -10,7 +10,6 @@ import {
 // Components
 import Nav from "../../components/Nav/Nav";
 import Footer from "../../components/Footer/Footer";
-import About from "../About/About";
 import Menu from "../Menu/Menu";
 import Contact from "../Contact/Contact";
 import Home from "../Home/Home";
@@ -26,7 +25,6 @@ const Routing = () => {
                     <Route path="/home" element={<Home/>}/>
                     <Route path="/menus" element={<Navigate replace to="/menus/restaurant"/>} />
                     <Route path="/menus/" element={<Menu/>}/>
-                    <Route path="/about" element={<About/>}/>
                     <Route path="/contact" element={<Contact/>}/>
                 </Routes>
                 <Footer/>

@@ -1,5 +1,18 @@
 @use "../../Assets/Styles/Utility/variables" as *;
 
+.booking--dark {
+    background-color: $dark;
+    .table-booking{
+        h3 {
+            color: $light !important
+        }
+        &__info {
+            &-phone {
+                color: $light !important
+            }
+        }
+    }
+}
 .table-booking__container {
     h2 {
         margin-bottom: 1rem;

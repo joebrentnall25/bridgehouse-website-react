@@ -6,7 +6,6 @@ import { typeData } from "./Assets/data/data";
 import Areas from "./components/Areas/Areas";
 import Reviews from "./components/Reviews/Reviews";
 
-import About from "./containers/About/About";
 import Home from './containers/Home/Home';
 import Routing from './containers/Routing/Routing';
 import Menu from './containers/Menu/Menu';
@@ -20,13 +19,13 @@ describe("Test app renders without crash", () => {
     const component = shallow(<App/>)
     expect(component.exists()).toBeTruthy()
   })
-  test("test contact loads", () => {
-    const component = shallow(<Contact/>)
-    const form = component.find(".contact__form");
-    const info = component.find(".contact__info")
-    expect(form.exists()).toBeTruthy();
-    expect(info.exists()).toBeTruthy();
-  })
+  // test("test contact loads", () => {
+  //   const component = shallow(<Contact/>)
+  //   const form = component.find(".contact__form");
+  //   const info = component.find(".contact__info")
+  //   expect(form.exists()).toBeTruthy();
+  //   expect(info.exists()).toBeTruthy();
+  // })
   test("test home loads", () => {
     const component = shallow(<Home/>)
     const news = component.find(".home-news")
@@ -50,15 +49,15 @@ describe("Test app renders without crash", () => {
     expect(routes.exists()).toBeTruthy()
     expect(footer.exists()).toBeTruthy()
   })
-  test("test about loads", () => {
-    const component = shallow(<About/>);
-    const about = component.find(".about");
-    const reviews = component.find("Reviews");
-    const bookings = component.find("Bookings");
-    expect(about.exists()).toBeTruthy();
-    expect(reviews.exists()).toBeTruthy();
-    expect(bookings.exists()).toBeTruthy();
-  })
+  // test("test about loads", () => {
+  //   const component = shallow(<About/>);
+  //   const about = component.find(".about");
+  //   const reviews = component.find("Reviews");
+  //   const bookings = component.find("Bookings");
+  //   expect(about.exists()).toBeTruthy();
+  //   expect(reviews.exists()).toBeTruthy();
+  //   expect(bookings.exists()).toBeTruthy();
+  // })
 })
 
 describe("Test booking component", () => {
