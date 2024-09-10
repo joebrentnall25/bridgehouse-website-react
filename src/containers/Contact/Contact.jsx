@@ -16,7 +16,7 @@ const Contact = () => {
     const sendEmail = (e) => {
         e.preventDefault();
 
-        emailjs.sendForm('bridgehouse_support', 'bridgehouse_default_msg', form.current, 'user_ipKjdSHYHWIzBGxAV38ZZ')
+        emailjs.sendForm('bridgehouse_support', 'bridgehouse_default_msg', form.current, 'pass')
             .then((result) => {
                 console.log(result.text);
                 if (result.text === "OK") {
