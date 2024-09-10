@@ -3,6 +3,8 @@ import restaurant1 from "../Images/Areas/Restaurant1.JPG"
 import restaurant2 from "../Images/Areas/Restaurant2.JPG"
 import bar1 from "../Images/Areas/Bar1.JPG"
 import bar2 from "../Images/Areas/Bar2.JPG"
+import garden1 from "../Images/Areas/Garden1.JPG"
+import garden2 from "../Images/Areas/Garden2.JPG"
 
 export const typeData = {
     table: {
@@ -31,7 +33,7 @@ export const areasData = {
         name: "Bar",
         displayName: "Finley's Bar",
         link: "/menus/",
-        description: "The bar serves alcholic drinks and other beverages.",
+        description: "The bar serves alcholic drinks and other beverages. Call to book your event here.",
         imgLink: [bar1, bar2],
     },
     Garden: {
@@ -39,7 +41,7 @@ export const areasData = {
         displayName: "Poppy's Secret Garden",
         link: "/menus/",
         description: "The garden is a lovely environment for food and drinks, especially in the summer.",
-        imgLink: [restaurant1]
+        imgLink: [garden1, garden2]
     }
 };
 
