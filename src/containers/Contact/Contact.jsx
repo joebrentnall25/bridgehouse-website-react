@@ -5,31 +5,30 @@ import { Helmet } from "react-helmet";
 
 // Components
 import Bookings from "../../components/BookTable/Bookings";
-import Button from "../../components/Buttons/Button";
 import Map from "../../components/Map/Map";
 
 
 const Contact = () => {
     const form = useRef();
-    const [isSuccessful, setIsSuccessful] = useState(false);
+    // const [isSuccessful, setIsSuccessful] = useState(false);
 
-    const sendEmail = (e) => {
-        e.preventDefault();
+    // const sendEmail = (e) => {
+    //     e.preventDefault();
 
-        emailjs.sendForm('bridgehouse_support', 'bridgehouse_default_msg', form.current, 'pass')
-            .then((result) => {
-                console.log(result.text);
-                if (result.text === "OK") {
-                    setIsSuccessful(true)
-                    setTimeout(() => {
-                        setIsSuccessful(false)
-                    }, 15000)
-                }
-            }, (error) => {
-                console.log(error.text);
-            });
-        e.target.reset();
-    };
+    //     emailjs.sendForm('bridgehouse_support', 'bridgehouse_default_msg', form.current, 'pass')
+    //         .then((result) => {
+    //             console.log(result.text);
+    //             if (result.text === "OK") {
+    //                 setIsSuccessful(true)
+    //                 setTimeout(() => {
+    //                     setIsSuccessful(false)
+    //                 }, 15000)
+    //             }
+    //         }, (error) => {
+    //             console.log(error.text);
+    //         });
+    //     e.target.reset();
+    // };
 
     return (<>
         <Helmet>

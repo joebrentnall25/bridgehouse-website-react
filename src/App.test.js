@@ -50,15 +50,15 @@ describe("Test app renders without crash", () => {
     expect(routes.exists()).toBeTruthy()
     expect(footer.exists()).toBeTruthy()
   })
-  test("test about loads", () => {
-    const component = shallow(<About/>);
-    const about = component.find(".about");
-    const reviews = component.find("Reviews");
-    const bookings = component.find("Bookings");
-    expect(about.exists()).toBeTruthy();
-    expect(reviews.exists()).toBeTruthy();
-    expect(bookings.exists()).toBeTruthy();
-  })
+  // test("test about loads", () => {
+  //   const component = shallow(<About/>);
+  //   const about = component.find(".about");
+  //   const reviews = component.find("Reviews");
+  //   const bookings = component.find("Bookings");
+  //   expect(about.exists()).toBeTruthy();
+  //   expect(reviews.exists()).toBeTruthy();
+  //   expect(bookings.exists()).toBeTruthy();
+  // })
 })
 
 describe("Test booking component", () => {

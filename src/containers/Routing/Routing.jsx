@@ -10,7 +10,6 @@ import {
 // Components
 import Nav from "../../components/Nav/Nav";
 import Footer from "../../components/Footer/Footer";
-import About from "../About/About";
 import Menu from "../Menu/Menu";
 import Contact from "../Contact/Contact";
 import Home from "../Home/Home";
