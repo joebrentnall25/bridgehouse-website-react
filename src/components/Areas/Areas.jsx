@@ -10,6 +10,7 @@ import Carousel from "../Carousel/Carousel";
 const Areas = () => {
     const [currentArea, setCurrentArea] = useState({
         name: areasData.Restaurant.name,
+        displayName: areasData.Restaurant.displayName,
         link: areasData.Restaurant.link,
         description: areasData.Restaurant.description,
         imgLink: areasData.Restaurant.imgLink
@@ -22,6 +23,7 @@ const Areas = () => {
             if (area === areaSelected){ 
                 setCurrentArea({
                     name: areasData[areaSelected].name,
+                    displayName: areasData[areaSelected].displayName,
                     link: areasData[areaSelected].link,
                     description: areasData[areaSelected].description,
                     imgLink: areasData[areaSelected].imgLink
@@ -33,9 +35,9 @@ const Areas = () => {
     const getButtons = () => {
         return Object.keys(areasData).map((area, index) => {
             if (area === currentArea.name){
-                 return (<li key={index}><Button type="area" text={areasData[area].name} active="true" onClick={() => selectArea(area)}/></li>)
+                 return (<li key={index}><Button type="area" text={areasData[area].displayName} active="true" onClick={() => selectArea(area)}/></li>)
             }
-            return (<li key={index}><Button type="area" text={areasData[area].name} onClick={() => selectArea(area)}/></li>)
+            return (<li key={index}><Button type="area" text={areasData[area].displayName} onClick={() => selectArea(area)}/></li>)
         })
     }
 
@@ -48,7 +50,7 @@ const Areas = () => {
                 { buttonsHtml }
             </ul>
             <div className="areas__main-content">
-                <h3 className="areas__main-content-title">{currentArea.name}</h3>
+                <h3 className="areas__main-content-title">{currentArea.displayName}</h3>
                 <p className="areas__main-content-para">{currentArea.description}</p>
                 <Button className="areas__main-content-link" type="tertiary" to={currentArea.link} text="View Menu"/>
             </div>

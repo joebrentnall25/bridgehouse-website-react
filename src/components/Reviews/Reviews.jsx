@@ -3,8 +3,8 @@ import "./Reviews.scss";
 import Button from "../Buttons/Button";
 import { useState } from "react";
 
-const Reviews = () => {
-
+const Reviews = (props) => {
+    const { className } = props;
     let [currentIndex, setCurrentIndex] = useState(0);
 
     const [review, setReview] = useState({
@@ -39,7 +39,7 @@ const Reviews = () => {
     }
 
     return (
-    <section className="reviews">
+    <section className={`reviews ${className ?? ""}`}>
         <div className="reviews__header">
             <h2 className="reviews__heading primary">Our Reviews</h2>
             <h3>Hear what our customers say.</h3>

@@ -2,7 +2,7 @@ import "./Bookings.scss";
 import { typeData as data } from "../../Assets/data/data";
 
 const Bookings = (props) => {
-    const { type } = props;
+    const { type, dark = false } = props;
     const typeData = data;
 
     let currentType;
@@ -22,7 +22,7 @@ const Bookings = (props) => {
     }
 
     return (
-    <section className="table-booking__container container">
+    <section className={`container ${dark ? "booking--dark table-booking__container" : "table-booking__container"}`}>
         <div className="table-booking">
             <h3 className="table-booking__header">{currentType.header}</h3>
             <div className="table-booking__info">
