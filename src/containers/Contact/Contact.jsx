@@ -61,7 +61,7 @@ const Contact = () => {
             </div>
             <div className="about-info__contact">
                 <a href="tel:+441332482549">01332 482549</a>
-                <a href="mailto:test@email.com">test@email.com</a>
+                <a href="mailto:test@email.com">info@bridgehouseambergate.co.uk</a>
             </div>
         </section>
         {/* <div className="contact container">
