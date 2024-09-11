@@ -1,10 +1,10 @@
 // Images - Areas
-import restaurant1 from "../Images/Areas/Restaurant1.JPG"
-import restaurant2 from "../Images/Areas/Restaurant2.JPG"
-import bar1 from "../Images/Areas/Bar1.JPG"
-import bar2 from "../Images/Areas/Bar2.JPG"
-import garden1 from "../Images/Areas/Garden1.JPG"
-import garden2 from "../Images/Areas/Garden2.JPG"
+import restaurant1 from "../Images/Areas/Restaurant1.jpeg"
+import restaurant2 from "../Images/Areas/Restaurant2.jpeg"
+import bar1 from "../Images/Areas/Bar1.jpeg"
+import bar2 from "../Images/Areas/Bar2.jpeg"
+import garden1 from "../Images/Areas/Garden1.jpeg"
+import garden2 from "../Images/Areas/Garden2.jpeg"
 
 export const typeData = {
     table: {

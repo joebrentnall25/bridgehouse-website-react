@@ -7,9 +7,9 @@ import Button from "../../components/Buttons/Button";
 import Reviews from "../../components/Reviews/Reviews";
 import Areas from "../../components/Areas/Areas";
 
-import homeImage from "../../Assets/Images/Home/Home.jpg";
-import eventPreview from "../../Assets/Images/Preview/EventPreview.jpg";
-import roomPreview from "../../Assets/Images/Preview/RoomPreview.JPG";
+import homeImage from "../../Assets/Images/Home/Home.jpeg";
+import eventPreview from "../../Assets/Images/Preview/EventPreview.jpeg";
+import roomPreview from "../../Assets/Images/Preview/RoomPreview.jpeg";
 
 const Home = () => {
     const news = [
