@@ -2,7 +2,7 @@ import "./Footer.scss";
 import logo from "../../Assets/Images/logo_white.png";
 import { Link } from "react-router-dom";
 import Button from "../Buttons/Button";
-import hygeineRating from "../../Assets/Images/hygeine_rating.jpeg"
+// import hygeineRating from "../../Assets/Images/hygeine_rating.jpeg"
 
 // Icons
 import {BsFacebook} from "react-icons/bs"
