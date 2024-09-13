@@ -28,7 +28,7 @@ const About = () => {
                         We can host for a variety of different events. If you would like to book for a function or just have more questions. Give us a call or email us.
                     </p>
                     <div className="about-events__contact">
-                        <a href="tel:+441332482549">01332 482549</a>
+                        <a href="tel:+441773270978">01773 270978</a>
                         <a className="about-events__contact-mail" href="mailto:test@email.com">test@email.com</a>
                     </div>
                 </section>
@@ -55,7 +55,7 @@ const About = () => {
                         <p>DE56 2EJ</p>
                     </div>
                     <div className="about-info__contact">
-                        <a href="tel:+441332482549">01332 482549</a>
+                        <a href="tel:+441773270978">01773 270978</a>
                         <a href="mailto:test@email.com">test@email.com</a>
                     </div>
                 </section>

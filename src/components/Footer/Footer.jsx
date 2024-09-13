@@ -33,7 +33,7 @@ const Footer = () => {
             </div>
             <div className="footer__useful-info">
                 <h4>Useful Information</h4>
-                <a href="tel:+441332482549">01332 482549</a>
+                <a href="tel:+441773270978">01773 270978</a>
                 <a href="mailto:info@bridgehouseambergate.co.uk">Email</a>
                 <a href="https://goo.gl/maps/yCK5BfKazBZrhiom7" target="_blank" rel="noreferrer">Directions</a>
                 <a href="https://www.tripadvisor.co.uk/Restaurant_Review-g2093189-d23163521-Reviews-Bridge_House-Ambergate_Derbyshire_England.html" target="_blank" rel="noreferrer"><FaTripadvisor size={42}/></a>

@@ -27,7 +27,7 @@ const Bookings = (props) => {
             <h3 className="table-booking__header">{currentType.header}</h3>
             <div className="table-booking__info">
                 <p className="table-booking__info-text">{currentType.text}</p>
-                <a className="table-booking__info-phone" href="tel:+441332482549">01332 482549</a>
+                <a className="table-booking__info-phone" href="tel:+441773270978">01773 270978</a>
             </div>
         </div>
     </section>)
