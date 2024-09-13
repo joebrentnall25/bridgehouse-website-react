@@ -17,7 +17,7 @@ const Footer = () => {
                 <a className="footer__link-to-maps" target="_blank" rel="noreferrer" href="https://goo.gl/maps/neh3ysAx2RQHVMJW6">Derby Rd, Ambergate, Belper DE56 2EJ</a>
                 <p>Monday-Saturday: <span className="highlight">8am-3pm</span></p>
                 <p>Sunday: <span className="highlight">9am-2pm</span></p>
-                <Button className="footer__hygeine" type="image" to="https://hygieneratings.uk/1364337-bridge-house-ambergate" img={hygeineRating} alt="5* hygeine rating" /> 
+                {/* <Button className="footer__hygeine" type="image" to="https://hygieneratings.uk/1364337-bridge-house-ambergate" img={hygeineRating} alt="5* hygeine rating" />  */}
             </div>
             <div className="footer__menus">
                 <h4>Menus</h4>

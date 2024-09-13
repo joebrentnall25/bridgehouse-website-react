@@ -1,5 +1,5 @@
 import { useState } from "react";
-import {NavLink} from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import logo from "../../Assets/Images/logo_white.png";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -15,29 +15,29 @@ const Nav = () => {
     }
 
     return (
-    <nav className="dark" id="nav">
-        <div className="nav">            
-            <div className="nav__main">
-                <NavLink to="/home">
-                    <button onClick={() => toggleMenu()}><FontAwesomeIcon icon={faBars}/></button>
-                    <img src={logo}alt="Bridgehouse Ambergate"/>
-                </NavLink>
+        <nav className="dark" id="nav">
+            <div className="nav">
+                <div className="nav__main">
+                    <button onClick={() => toggleMenu()}><FontAwesomeIcon icon={faBars} /></button>
+                    <NavLink to="/home">
+                        <img src={logo} alt="Bridgehouse Ambergate" />
+                    </NavLink>
+                </div>
+                <div className="nav__links--large">
+                    <ul className={toggle ? "nav__links show-nav" : "nav__links"}>
+                        <li><NavLink to="/home" style={({ isActive }) => ({
+                            color: isActive ? '#FFF' : '#929597'
+                        })}><span className="hover">Home</span></NavLink></li>
+                        <li><NavLink to="/menus" style={({ isActive }) => ({
+                            color: isActive ? '#FFF' : '#929597'
+                        })}><span className="hover">Our Menus</span></NavLink></li>
+                        <li><NavLink to="/contact" style={({ isActive }) => ({
+                            color: isActive ? '#FFF' : '#929597'
+                        })}><span className="hover">Contact</span></NavLink></li>
+                    </ul>
+                </div>
             </div>
-            <div className="nav__links--large">
-                <ul className={toggle ? "nav__links show-nav" : "nav__links"}>
-                    <li><NavLink to="/home" style={({isActive}) => ({
-                        color: isActive ? '#FFF' : '#929597'
-                    })}><span className="hover">Home</span></NavLink></li>
-                    <li><NavLink to="/menus" style={({isActive}) => ({
-                        color: isActive ? '#FFF' : '#929597'
-                    })}><span className="hover">Our Menus</span></NavLink></li>
-                    <li><NavLink to="/contact" style={({isActive}) => ({
-                        color: isActive ? '#FFF' : '#929597'
-                    })}><span className="hover">Contact</span></NavLink></li>
-                </ul>
-            </div>
-        </div>
-    </nav>)
+        </nav>)
 }
 
 export default Nav;
