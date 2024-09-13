@@ -60,7 +60,7 @@ const Contact = () => {
                 <p>DE56 2EJ</p>
             </div>
             <div className="about-info__contact">
-                <a href="tel:+441332482549">01332 482549</a>
+                <a href="tel:+441773270978">01773 270978</a>
                 <a href="mailto:test@email.com">info@bridgehouseambergate.co.uk</a>
             </div>
         </section>
