@@ -3,10 +3,11 @@
 
 
 h1 {
-    color: $dark;
-    font-size: 34px;
+    font-size: 18px;
     font-family: 'Readex Pro', sans-serif;
-    font-weight: bold;
+}
+h1.primary {
+    color: $primary;
 }
 
 h3 {

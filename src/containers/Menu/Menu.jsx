@@ -60,10 +60,11 @@ const Menu = () => {
     return (<>
         <Helmet>
             <meta charSet="utf-8" />
+            <meta name="description" content="Bridgehouse ambergate restaurant. See our menus, food, drinks."/>
             <title>Our Menus | Bridgehouse Ambergate</title>
         </Helmet>
         <header className="container menu-hero">
-            <h2 className="menu-hero__title primary">Menus</h2>
+            <h1 className="menu-hero__title primary">Menus</h1>
             <h3 className="menu-hero__subheader">View our menus.</h3>
             <div className="menu-hero__buttons">
                 {menuTitles.map((title, i) => {

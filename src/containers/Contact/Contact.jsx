@@ -31,10 +31,11 @@ const Contact = () => {
     return (<>
         <Helmet>
             <meta charSet="utf-8" />
+            <meta name="description" content="Bridgehouse ambergate restaurant. Contact us, email, phone number"/>
             <title>Contact Us | Bridgehouse Ambergate</title>
         </Helmet>
         <header className="container contact-hero">
-            <h2 className="menu-hero__title primary">Contact</h2>
+            <h1 className="menu-hero__title primary">Contact</h1>
             <h3 className="menu-hero__subheader">Get in touch.</h3>
             <p>We're here to assist with all your reservations. Whether you're looking to book a room, plan an event, or have any other inquiries, our team is ready to help. Get in touch today to discuss your needs and secure your spot.</p>
         </header>

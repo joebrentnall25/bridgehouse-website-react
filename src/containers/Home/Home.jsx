@@ -15,7 +15,7 @@ const Home = () => {
     const news = [
         {
             title: "Bridgehouse Rooms",
-            para: "Book your room at Bridgehouse and experience the beauty of the Peak District. Enjoy a relaxing stay with plenty of opportunities for exploration nearby. Call use to find out more!",
+            para: "Book your room at Bridgehouse and experience the beauty of the Peak District. Enjoy a relaxing stay with plenty of opportunities for exploration nearby. Call us to find out more!",
             image: roomPreview,
             imageAlt: "Book a Bridgehouse Room for you stay in the peak district",
             buttonText: "Find out more",
@@ -35,6 +35,7 @@ const Home = () => {
         <>
             <Helmet>
                 <meta charSet="utf-8" />
+                <meta name="description" content="Bridgehouse ambergate restaurant. Book your table today."/>
                 <title>Bridgehouse Ambergate | Book your visit today!</title>
             </Helmet>
             <header className="dark">
