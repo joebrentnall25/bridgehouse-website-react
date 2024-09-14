@@ -35,6 +35,7 @@ const Home = () => {
         <>
             <Helmet>
                 <meta charSet="utf-8" />
+                <meta name="description" content="Bridgehouse ambergate restaurant. Book your table today."/>
                 <title>Bridgehouse Ambergate | Book your visit today!</title>
             </Helmet>
             <header className="dark">
