@@ -29,7 +29,7 @@ const About = () => {
                     </p>
                     <div className="about-events__contact">
                         <a href="tel:+441773270978">01773 270978</a>
-                        <a className="about-events__contact-mail" href="mailto:test@email.com">test@email.com</a>
+                        <a className="about-events__contact-mail" href="mailto:info@bridgehouseambergate.co.uk">info@bridgehouseambergate.co.uk</a>
                     </div>
                 </section>
                 <Areas/>
@@ -56,7 +56,7 @@ const About = () => {
                     </div>
                     <div className="about-info__contact">
                         <a href="tel:+441773270978">01773 270978</a>
-                        <a href="mailto:test@email.com">test@email.com</a>
+                        <a href="mailto:info@bridgehouseambergate.co.uk">info@bridgehouseambergate.co.uk</a>
                     </div>
                 </section>
                 <Reviews/> 
