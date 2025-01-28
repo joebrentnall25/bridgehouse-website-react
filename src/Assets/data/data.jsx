@@ -113,7 +113,7 @@ export const menu = [
                 category: "Breakfast",
             },
             {
-                item: "Welsh rarebit pm tpasted soda bread",
+                item: "Welsh rarebit on toasted soda bread",
                 description: "Add bacon",
                 symbols: ["vAvailable"],
                 category: "Brunch",
@@ -245,7 +245,7 @@ export const menu = [
                 category: "Brunch",
             },               
             {
-                item: "Beans, sausage, bacon, hash borwns & cheese",
+                item: "Beans, sausage, bacon, hash browns & cheese",
                 description: "",
                 symbols: ["vAvailable"],
                 category: "Breakfast",
